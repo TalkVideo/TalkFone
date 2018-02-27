@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0018AE5C896A348F4BC3669B /* IAX2CallbackHandlerQt.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C603A0BFEE21A2F84CBCFACB /* IAX2CallbackHandlerQt.cpp */; settings = {ATTRIBUTES = (); }; };
+		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
+		0E321899E871152B6F817CDC /* Kiax2MainWindow.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DB9A92842D56ED7E911ED0D5 /* Kiax2MainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		136434E6000DEA57B1A497A8 /* moc_Kiax2ContactDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = ACDA4F55F6819FF8921CA92E /* moc_Kiax2ContactDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		13947E3B2A6EE12EF88D62A0 /* libjson.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = CB978543AC24DF8F1760629B /* libjson.a */; };
+		1CF61236D5905622D16430D6 /* moc_IAX2CallbackHandlerQt.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 02F3510D1D4CBA1579A78011 /* moc_IAX2CallbackHandlerQt.cpp */; settings = {ATTRIBUTES = (); }; };
+		266242C307D08CE551B91681 /* Kiax2ContactListItemWidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E2EA383D4AF11A26ED60391F /* Kiax2ContactListItemWidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		27C9994C65307DF8AFFF1104 /* Kiax2AboutDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BEB9B9F1B00E293410E4D478 /* Kiax2AboutDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		2BBFB2A76D310959B0F82768 /* moc_Kiax2ConnectionMeter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 639DB5CAF24CFD28E796F414 /* moc_Kiax2ConnectionMeter.cpp */; settings = {ATTRIBUTES = (); }; };
+		2C579CC89A9236CFD9181DF4 /* moc_Kiax2JSONUsersOnline.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3881269496B0F4F584E2138A /* moc_Kiax2JSONUsersOnline.cpp */; settings = {ATTRIBUTES = (); }; };
+		2F5A6111BEBCCCEFA4A069EA /* Kiax2Application.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9C1427A2565ED5423929204B /* Kiax2Application.cpp */; settings = {ATTRIBUTES = (); }; };
+		3826A0833FCB54E86728C6EF /* QtNetwork.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = B6B9970B86A6C219B0869FE9 /* QtNetwork.framework */; };
+		3E43E427D62CE7E3521BB9C1 /* Kiax2ListWidgetItem.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AA2646755E5C8BFDECC3F383 /* Kiax2ListWidgetItem.cpp */; settings = {ATTRIBUTES = (); }; };
+		42887A304BBE85400072E799 /* moc_kiax2JSONNotification.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 063D03EF735143ACDE9455CC /* moc_kiax2JSONNotification.cpp */; settings = {ATTRIBUTES = (); }; };
+		45B1BB4C1494697ACB2F3A1B /* Kiax2Servers.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3F18E48BCDE0C68849BD13C5 /* Kiax2Servers.cpp */; settings = {ATTRIBUTES = (); }; };
+		497AC93C8C088B02CCBB52BB /* Kiax2JSONNotification.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8BEFD2BC89AB66CA687DB60F /* Kiax2JSONNotification.cpp */; settings = {ATTRIBUTES = (); }; };
+		4CDC9316E8BB6F0B09780170 /* macosicons.icns in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 56726C5F90148E6F6211DD15 /* macosicons.icns */; settings = {ATTRIBUTES = (); }; };
+		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
+		51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 821416211D63F190AAAD016A /* AppKit.framework */; };
+		57222E796AC4BF9151D6B485 /* libiaxclient.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 631CD5937EDC201075202E61 /* libiaxclient.dylib */; };
+		5CACF7745A5E2BC6E90FAE19 /* moc_Kiax2SettingsDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 193E4B11DC1541BD5DB9CA88 /* moc_Kiax2SettingsDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		5D506821C46C1B66B32BC789 /* moc_Kiax2MainWindow.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5F4DB52E421ED6DFE915F30E /* moc_Kiax2MainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		6412D42BA12C720586AD9007 /* Kiax2JSONServers.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B1E8C15804F7BC6AC4CE97C9 /* Kiax2JSONServers.cpp */; settings = {ATTRIBUTES = (); }; };
+		759DC63EB3600EE2F66BCE33 /* moc_Kiax2JSONSupernode.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 57C82D0311A8AAC50C3214CD /* moc_Kiax2JSONSupernode.cpp */; settings = {ATTRIBUTES = (); }; };
+		777588F90EBF05C2000E596A /* Kiax.app in Project Copy */ = {isa = PBXBuildFile; fileRef = 777588F60EBF05C2000E596A /* Kiax.app */; };
+		779EE9EC60ED89A1E7638464 /* Kiax2JSONSupernode.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 28856F161187E57A6477024C /* Kiax2JSONSupernode.cpp */; settings = {ATTRIBUTES = (); }; };
+		7FA0922C2B366285ED082864 /* Kiax2ContactDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 41CCC90FB26766B325CDFF58 /* Kiax2ContactDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		8055BF1E15455BE1BFF23234 /* Kiax2SettingsDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 56AA2E7D92ADAA1808006B2A /* Kiax2SettingsDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		85992F2C6FAB9C221748BD24 /* moc_Kiax2CallDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 331F157C08AE071EABA9947A /* moc_Kiax2CallDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		85FEE1F7F329362C4D1DD267 /* moc_Kiax2JSONServers.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8CAD7D9104A30964AB238006 /* moc_Kiax2JSONServers.cpp */; settings = {ATTRIBUTES = (); }; };
+		96D91ECF5D59A64FACCF26CC /* moc_Kiax2Application.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E0ADD4BDF54D5288A3D1B5AC /* moc_Kiax2Application.cpp */; settings = {ATTRIBUTES = (); }; };
+		9A5EA0A977708EDA039A4991 /* Kiax2LoginScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C0918A715601ACE95401F3B0 /* Kiax2LoginScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		9A989D225050CEE6ED839AC2 /* moc_Kiax2DispatcherServer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A13EDCFCF0E59EC434FA446B /* moc_Kiax2DispatcherServer.cpp */; settings = {ATTRIBUTES = (); }; };
+		A0B5672C0FE6100FFF35DB43 /* Kiax2DispatcherServer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CBAAB056B24DA40E1B8300BF /* Kiax2DispatcherServer.cpp */; settings = {ATTRIBUTES = (); }; };
+		B31913F2D689CD55B0B62B79 /* Kiax2DispatcherThread.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 39598FE99F1D4674C0BB6BE7 /* Kiax2DispatcherThread.cpp */; settings = {ATTRIBUTES = (); }; };
+		B3E5BF9C1628AA6EEE491018 /* moc_Kiax2ContactListItemWidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AD2C0CAF38227485B802E403 /* moc_Kiax2ContactListItemWidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		B7FCE2D53A143953B35BF871 /* moc_Kiax2DispatcherThread.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FEF86C3F3F5E9E0558036BA7 /* moc_Kiax2DispatcherThread.cpp */; settings = {ATTRIBUTES = (); }; };
+		B8AD3D7C1D3EE4FEEE0972DE /* Kiax2JSONBalance.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7100A73B3D3054B2F6AFF8DE /* Kiax2JSONBalance.cpp */; settings = {ATTRIBUTES = (); }; };
+		C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA138F75C9F545CDAE7FB264 /* Carbon.framework */; };
+		CD00CDEDF8E2D9C4779AD469 /* Kiax2CallDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D333730A49FB9C13B3CC065C /* Kiax2CallDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		DCD1D8A1C43F1A9CACF5722A /* libkiax2core.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7FA0C4070FE286A106A93600 /* libkiax2core.dylib */; };
+		E0B6A82365EEA139767DC178 /* moc_Kiax2AccountDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F65AE2A602851347FF7F1D23 /* moc_Kiax2AccountDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		E72625065D69835A1C5573AC /* libsqlite3.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = CA3F607CE404BDC6007722D7 /* libsqlite3.dylib */; };
+		F03E0622C1D4FDD15B48B226 /* Kiax2JSONUsersOnline.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CDFF64C4B6B89993948A2FF4 /* Kiax2JSONUsersOnline.cpp */; settings = {ATTRIBUTES = (); }; };
+		F378EF37F87DA0BA9606D861 /* Kiax2AccountDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EE7774652663964D961C371D /* Kiax2AccountDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		F4BE769B331372DFA2401AEF /* moc_Kiax2LoginScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1F3A3E8463CF52164CDEA4A0 /* moc_Kiax2LoginScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		F816D0139063D628C94A51F1 /* moc_Kiax2JSONBalance.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7458CB68F440E476FC0D330E /* moc_Kiax2JSONBalance.cpp */; settings = {ATTRIBUTES = (); }; };
+		F860E44475189C9C36080FE0 /* Kiax2ConnectionMeter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 468B21C81B6D9DE6CE6D9106 /* Kiax2ConnectionMeter.cpp */; settings = {ATTRIBUTES = (); }; };
+		F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */; };
+		FCCBCE4C69B426C44DD68F02 /* moc_Kiax2AboutDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1FCD345993CDEFD55B1ADF10 /* moc_Kiax2AboutDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/emilstoyanov/developer/kiax/trunk/gui;
+			dstSubfolderSpec = 0;
+			files = (
+				777588F90EBF05C2000E596A /* Kiax.app in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02F3510D1D4CBA1579A78011 /* moc_IAX2CallbackHandlerQt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_IAX2CallbackHandlerQt.cpp; sourceTree = "<group>"; };
+		063D03EF735143ACDE9455CC /* moc_kiax2JSONNotification.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_kiax2JSONNotification.cpp; sourceTree = "<group>"; };
+		065949481B357F0E2A473344 /* ui_loginscreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_loginscreen.h; sourceTree = "<group>"; };
+		07E519B1CFD67E03B43E868F /* Kiax2ListWidgetItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2ListWidgetItem.h; sourceTree = "<group>"; };
+		0A98CEBF3BAB883969FE5721 /* Kiax2Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2Application.h; sourceTree = "<group>"; };
+		0CD2D902DD7B728E7C9B8503 /* ui_contactlistitemwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_contactlistitemwidget.h; sourceTree = "<group>"; };
+		0D82D11DDF6B79E99AE6FEA0 /* ui_aboutdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_aboutdialog.h; sourceTree = "<group>"; };
+		0FB7DB341506922E48C69F7A /* IAX2CallbackHandlerQt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAX2CallbackHandlerQt.h; sourceTree = "<group>"; };
+		12C68860722381F9184D3CD7 /* contactlistitemwidget.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = contactlistitemwidget.ui; sourceTree = "<group>"; };
+		18FD04ABB3DA858A1145629D /* Kiax2LoginScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2LoginScreen.h; sourceTree = "<group>"; };
+		193E4B11DC1541BD5DB9CA88 /* moc_Kiax2SettingsDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2SettingsDialog.cpp; sourceTree = "<group>"; };
+		1F3A3E8463CF52164CDEA4A0 /* moc_Kiax2LoginScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2LoginScreen.cpp; sourceTree = "<group>"; };
+		1FCD345993CDEFD55B1ADF10 /* moc_Kiax2AboutDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2AboutDialog.cpp; sourceTree = "<group>"; };
+		2330B17755AD5B5FA2441B3E /* Kiax2DispatcherServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2DispatcherServer.h; sourceTree = "<group>"; };
+		27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		28856F161187E57A6477024C /* Kiax2JSONSupernode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2JSONSupernode.cpp; sourceTree = "<group>"; };
+		2986E840644B0B15358F0A46 /* kiax2windowAlt.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = kiax2windowAlt.ui; sourceTree = "<group>"; };
+		2AB25C104193A09434169888 /* Kiax2ConnectionMeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2ConnectionMeter.h; sourceTree = "<group>"; };
+		331F157C08AE071EABA9947A /* moc_Kiax2CallDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2CallDialog.cpp; sourceTree = "<group>"; };
+		381F844D3C7653D28517E561 /* Kiax2Servers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2Servers.h; sourceTree = "<group>"; };
+		3881269496B0F4F584E2138A /* moc_Kiax2JSONUsersOnline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2JSONUsersOnline.cpp; sourceTree = "<group>"; };
+		39598FE99F1D4674C0BB6BE7 /* Kiax2DispatcherThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2DispatcherThread.cpp; sourceTree = "<group>"; };
+		3A62CFFB525B5409CC5E3BC8 /* Kiax2CallDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2CallDialog.h; sourceTree = "<group>"; };
+		3F18E48BCDE0C68849BD13C5 /* Kiax2Servers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2Servers.cpp; sourceTree = "<group>"; };
+		41CCC90FB26766B325CDFF58 /* Kiax2ContactDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2ContactDialog.cpp; sourceTree = "<group>"; };
+		46570934A29CB993A104FF13 /* Kiax2JSONSupernode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2JSONSupernode.h; sourceTree = "<group>"; };
+		468B21C81B6D9DE6CE6D9106 /* Kiax2ConnectionMeter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2ConnectionMeter.cpp; sourceTree = "<group>"; };
+		49C00500CF51B3758B55552A /* Kiax2ContactListItemWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2ContactListItemWidget.h; sourceTree = "<group>"; };
+		4DECDCBDD635EDAD476B587E /* ui_accountdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_accountdialog.h; sourceTree = "<group>"; };
+		4E11795E686B0C358BA392D1 /* Kiax2JSONBalance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2JSONBalance.h; sourceTree = "<group>"; };
+		52D2CB3EF0032223A694BC60 /* ui_kiax2windowAlt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_kiax2windowAlt.h; sourceTree = "<group>"; };
+		549884A52BDEC43F4C23A094 /* registerdialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = registerdialog.ui; sourceTree = "<group>"; };
+		56726C5F90148E6F6211DD15 /* macosicons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = macosicons.icns; sourceTree = "<group>"; };
+		56AA2E7D92ADAA1808006B2A /* Kiax2SettingsDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2SettingsDialog.cpp; sourceTree = "<group>"; };
+		57C82D0311A8AAC50C3214CD /* moc_Kiax2JSONSupernode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2JSONSupernode.cpp; sourceTree = "<group>"; };
+		5A28FD62AE3C3857201E2858 /* Kiax2AboutDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2AboutDialog.h; sourceTree = "<group>"; };
+		5F4DB52E421ED6DFE915F30E /* moc_Kiax2MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2MainWindow.cpp; sourceTree = "<group>"; };
+		631CD5937EDC201075202E61 /* libiaxclient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiaxclient.dylib; path = "../kiax2core/libs-macx/libiaxclient.dylib"; sourceTree = "<group>"; };
+		639DB5CAF24CFD28E796F414 /* moc_Kiax2ConnectionMeter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2ConnectionMeter.cpp; sourceTree = "<group>"; };
+		7100A73B3D3054B2F6AFF8DE /* Kiax2JSONBalance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2JSONBalance.cpp; sourceTree = "<group>"; };
+		734676D824D8E4846530521E /* Kiax2SettingsDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2SettingsDialog.h; sourceTree = "<group>"; };
+		7458CB68F440E476FC0D330E /* moc_Kiax2JSONBalance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2JSONBalance.cpp; sourceTree = "<group>"; };
+		777588F60EBF05C2000E596A /* Kiax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		7E2262D03FD3600713AD320B /* Kiax2JSONUsersOnline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2JSONUsersOnline.h; sourceTree = "<group>"; };
+		7FA0C4070FE286A106A93600 /* libkiax2core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libkiax2core.dylib; path = ../kiax2core/libkiax2core.dylib; sourceTree = "<group>"; };
+		821416211D63F190AAAD016A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		87E9CB68E78B02F9F2DAF1ED /* kiax2JSONNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kiax2JSONNotification.h; sourceTree = "<group>"; };
+		8BEFD2BC89AB66CA687DB60F /* Kiax2JSONNotification.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2JSONNotification.cpp; sourceTree = "<group>"; };
+		8CAD7D9104A30964AB238006 /* moc_Kiax2JSONServers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2JSONServers.cpp; sourceTree = "<group>"; };
+		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		9BEABBD429A787BB867FBC38 /* loginscreen.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = loginscreen.ui; sourceTree = "<group>"; };
+		9C1427A2565ED5423929204B /* Kiax2Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2Application.cpp; sourceTree = "<group>"; };
+		9FA47EED444CCD615709313A /* Kiax2DispatcherThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2DispatcherThread.h; sourceTree = "<group>"; };
+		A13EDCFCF0E59EC434FA446B /* moc_Kiax2DispatcherServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2DispatcherServer.cpp; sourceTree = "<group>"; };
+		AA2646755E5C8BFDECC3F383 /* Kiax2ListWidgetItem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2ListWidgetItem.cpp; sourceTree = "<group>"; };
+		ACDA4F55F6819FF8921CA92E /* moc_Kiax2ContactDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2ContactDialog.cpp; sourceTree = "<group>"; };
+		AD2C0CAF38227485B802E403 /* moc_Kiax2ContactListItemWidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2ContactListItemWidget.cpp; sourceTree = "<group>"; };
+		B1E8C15804F7BC6AC4CE97C9 /* Kiax2JSONServers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2JSONServers.cpp; sourceTree = "<group>"; };
+		B50F7D443D1D7886449B217E /* gui.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = gui.pro; sourceTree = "<group>"; };
+		B6B9970B86A6C219B0869FE9 /* QtNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetwork.framework; path = /Library/Frameworks/QtNetwork.framework; sourceTree = "<absolute>"; };
+		BBAB18DFAB52BB2E2AFE1646 /* Kiax2AccountDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2AccountDialog.h; sourceTree = "<group>"; };
+		BEB9B9F1B00E293410E4D478 /* Kiax2AboutDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2AboutDialog.cpp; sourceTree = "<group>"; };
+		BFC5B8DFEF06C345FA27BB17 /* Kiax2MainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2MainWindow.h; sourceTree = "<group>"; };
+		C0918A715601ACE95401F3B0 /* Kiax2LoginScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2LoginScreen.cpp; sourceTree = "<group>"; };
+		C0E8BD088F7761511ECF4BA0 /* ui_calldialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_calldialog.h; sourceTree = "<group>"; };
+		C603A0BFEE21A2F84CBCFACB /* IAX2CallbackHandlerQt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IAX2CallbackHandlerQt.cpp; sourceTree = "<group>"; };
+		CA3F607CE404BDC6007722D7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = "../kiax2core/libs-macx/libsqlite3.dylib"; sourceTree = "<group>"; };
+		CB978543AC24DF8F1760629B /* libjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson.a; path = "../kiax2core/libs-macx/libjson.a"; sourceTree = "<group>"; };
+		CBAAB056B24DA40E1B8300BF /* Kiax2DispatcherServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2DispatcherServer.cpp; sourceTree = "<group>"; };
+		CDFF64C4B6B89993948A2FF4 /* Kiax2JSONUsersOnline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2JSONUsersOnline.cpp; sourceTree = "<group>"; };
+		CF5A8302DF7E6FC8CE5A562D /* contactdialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = contactdialog.ui; sourceTree = "<group>"; };
+		D333730A49FB9C13B3CC065C /* Kiax2CallDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2CallDialog.cpp; sourceTree = "<group>"; };
+		D3A0D9A171216378B1F5F10D /* aboutdialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = aboutdialog.ui; sourceTree = "<group>"; };
+		D53ADA08841EBCFB364C044C /* Kiax2JSONServers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2JSONServers.h; sourceTree = "<group>"; };
+		DA138F75C9F545CDAE7FB264 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		DB9A92842D56ED7E911ED0D5 /* Kiax2MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2MainWindow.cpp; sourceTree = "<group>"; };
+		DBDBFD057EF88857CEFFA9C1 /* ui_contactdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_contactdialog.h; sourceTree = "<group>"; };
+		E0ADD4BDF54D5288A3D1B5AC /* moc_Kiax2Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2Application.cpp; sourceTree = "<group>"; };
+		E2EA383D4AF11A26ED60391F /* Kiax2ContactListItemWidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2ContactListItemWidget.cpp; sourceTree = "<group>"; };
+		E630CE3F3FFA4235C33C94A5 /* Kiax2ContactDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiax2ContactDialog.h; sourceTree = "<group>"; };
+		E7BBF99684F87D475D415B2B /* calldialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = calldialog.ui; sourceTree = "<group>"; };
+		EE7774652663964D961C371D /* Kiax2AccountDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Kiax2AccountDialog.cpp; sourceTree = "<group>"; };
+		F176E94B53B794ED904F20A3 /* ui_registerdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_registerdialog.h; sourceTree = "<group>"; };
+		F65AE2A602851347FF7F1D23 /* moc_Kiax2AccountDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2AccountDialog.cpp; sourceTree = "<group>"; };
+		FB826E358A533D8C917A040E /* ui_settingsdialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_settingsdialog.h; sourceTree = "<group>"; };
+		FDCE99A131FCDEDDF9743D59 /* settingsdialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = settingsdialog.ui; sourceTree = "<group>"; };
+		FEF86C3F3F5E9E0558036BA7 /* moc_Kiax2DispatcherThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_Kiax2DispatcherThread.cpp; sourceTree = "<group>"; };
+		FF2D0DA26730927AD696C95B /* accountdialog.ui */ = {isa = PBXFileReference; lastKnownFileType = text; path = accountdialog.ui; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57222E796AC4BF9151D6B485 /* libiaxclient.dylib in Frameworks & Libraries */,
+				E72625065D69835A1C5573AC /* libsqlite3.dylib in Frameworks & Libraries */,
+				DCD1D8A1C43F1A9CACF5722A /* libkiax2core.dylib in Frameworks & Libraries */,
+				13947E3B2A6EE12EF88D62A0 /* libjson.a in Frameworks & Libraries */,
+				501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */,
+				C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */,
+				51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */,
+				3826A0833FCB54E86728C6EF /* QtNetwork.framework in Frameworks & Libraries */,
+				069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */,
+				F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				EEC299C65D5017EB9DD513B0 /* Sources [UIC] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				777588F70EBF05C2000E596A /* Products */,
+			);
+			name = gui;
+			sourceTree = "<group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5F4DB52E421ED6DFE915F30E /* moc_Kiax2MainWindow.cpp */,
+				1FCD345993CDEFD55B1ADF10 /* moc_Kiax2AboutDialog.cpp */,
+				F65AE2A602851347FF7F1D23 /* moc_Kiax2AccountDialog.cpp */,
+				331F157C08AE071EABA9947A /* moc_Kiax2CallDialog.cpp */,
+				ACDA4F55F6819FF8921CA92E /* moc_Kiax2ContactDialog.cpp */,
+				AD2C0CAF38227485B802E403 /* moc_Kiax2ContactListItemWidget.cpp */,
+				193E4B11DC1541BD5DB9CA88 /* moc_Kiax2SettingsDialog.cpp */,
+				02F3510D1D4CBA1579A78011 /* moc_IAX2CallbackHandlerQt.cpp */,
+				639DB5CAF24CFD28E796F414 /* moc_Kiax2ConnectionMeter.cpp */,
+				7458CB68F440E476FC0D330E /* moc_Kiax2JSONBalance.cpp */,
+				1F3A3E8463CF52164CDEA4A0 /* moc_Kiax2LoginScreen.cpp */,
+				E0ADD4BDF54D5288A3D1B5AC /* moc_Kiax2Application.cpp */,
+				3881269496B0F4F584E2138A /* moc_Kiax2JSONUsersOnline.cpp */,
+				063D03EF735143ACDE9455CC /* moc_kiax2JSONNotification.cpp */,
+				8CAD7D9104A30964AB238006 /* moc_Kiax2JSONServers.cpp */,
+				A13EDCFCF0E59EC434FA446B /* moc_Kiax2DispatcherServer.cpp */,
+				FEF86C3F3F5E9E0558036BA7 /* moc_Kiax2DispatcherThread.cpp */,
+				57C82D0311A8AAC50C3214CD /* moc_Kiax2JSONSupernode.cpp */,
+				52D2CB3EF0032223A694BC60 /* ui_kiax2windowAlt.h */,
+				4DECDCBDD635EDAD476B587E /* ui_accountdialog.h */,
+				0D82D11DDF6B79E99AE6FEA0 /* ui_aboutdialog.h */,
+				C0E8BD088F7761511ECF4BA0 /* ui_calldialog.h */,
+				DBDBFD057EF88857CEFFA9C1 /* ui_contactdialog.h */,
+				0CD2D902DD7B728E7C9B8503 /* ui_contactlistitemwidget.h */,
+				FB826E358A533D8C917A040E /* ui_settingsdialog.h */,
+				F176E94B53B794ED904F20A3 /* ui_registerdialog.h */,
+				065949481B357F0E2A473344 /* ui_loginscreen.h */,
+			);
+			name = "Temporary Sources";
+			sourceTree = "<group>";
+		};
+		777588F70EBF05C2000E596A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				777588F60EBF05C2000E596A /* Kiax.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				B50F7D443D1D7886449B217E /* gui.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BFC5B8DFEF06C345FA27BB17 /* Kiax2MainWindow.h */,
+				5A28FD62AE3C3857201E2858 /* Kiax2AboutDialog.h */,
+				BBAB18DFAB52BB2E2AFE1646 /* Kiax2AccountDialog.h */,
+				3A62CFFB525B5409CC5E3BC8 /* Kiax2CallDialog.h */,
+				E630CE3F3FFA4235C33C94A5 /* Kiax2ContactDialog.h */,
+				07E519B1CFD67E03B43E868F /* Kiax2ListWidgetItem.h */,
+				49C00500CF51B3758B55552A /* Kiax2ContactListItemWidget.h */,
+				734676D824D8E4846530521E /* Kiax2SettingsDialog.h */,
+				0FB7DB341506922E48C69F7A /* IAX2CallbackHandlerQt.h */,
+				2AB25C104193A09434169888 /* Kiax2ConnectionMeter.h */,
+				4E11795E686B0C358BA392D1 /* Kiax2JSONBalance.h */,
+				18FD04ABB3DA858A1145629D /* Kiax2LoginScreen.h */,
+				0A98CEBF3BAB883969FE5721 /* Kiax2Application.h */,
+				7E2262D03FD3600713AD320B /* Kiax2JSONUsersOnline.h */,
+				87E9CB68E78B02F9F2DAF1ED /* kiax2JSONNotification.h */,
+				D53ADA08841EBCFB364C044C /* Kiax2JSONServers.h */,
+				2330B17755AD5B5FA2441B3E /* Kiax2DispatcherServer.h */,
+				9FA47EED444CCD615709313A /* Kiax2DispatcherThread.h */,
+				381F844D3C7653D28517E561 /* Kiax2Servers.h */,
+				46570934A29CB993A104FF13 /* Kiax2JSONSupernode.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				631CD5937EDC201075202E61 /* libiaxclient.dylib */,
+				CA3F607CE404BDC6007722D7 /* libsqlite3.dylib */,
+				7FA0C4070FE286A106A93600 /* libkiax2core.dylib */,
+				CB978543AC24DF8F1760629B /* libjson.a */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				DA138F75C9F545CDAE7FB264 /* Carbon.framework */,
+				821416211D63F190AAAD016A /* AppKit.framework */,
+				B6B9970B86A6C219B0869FE9 /* QtNetwork.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+				27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		EEC299C65D5017EB9DD513B0 /* Sources [UIC] */ = {
+			isa = PBXGroup;
+			children = (
+				2986E840644B0B15358F0A46 /* kiax2windowAlt.ui */,
+				FF2D0DA26730927AD696C95B /* accountdialog.ui */,
+				D3A0D9A171216378B1F5F10D /* aboutdialog.ui */,
+				E7BBF99684F87D475D415B2B /* calldialog.ui */,
+				CF5A8302DF7E6FC8CE5A562D /* contactdialog.ui */,
+				12C68860722381F9184D3CD7 /* contactlistitemwidget.ui */,
+				FDCE99A131FCDEDDF9743D59 /* settingsdialog.ui */,
+				549884A52BDEC43F4C23A094 /* registerdialog.ui */,
+				9BEABBD429A787BB867FBC38 /* loginscreen.ui */,
+			);
+			name = "Sources [UIC]";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DB9A92842D56ED7E911ED0D5 /* Kiax2MainWindow.cpp */,
+				BEB9B9F1B00E293410E4D478 /* Kiax2AboutDialog.cpp */,
+				EE7774652663964D961C371D /* Kiax2AccountDialog.cpp */,
+				D333730A49FB9C13B3CC065C /* Kiax2CallDialog.cpp */,
+				41CCC90FB26766B325CDFF58 /* Kiax2ContactDialog.cpp */,
+				AA2646755E5C8BFDECC3F383 /* Kiax2ListWidgetItem.cpp */,
+				E2EA383D4AF11A26ED60391F /* Kiax2ContactListItemWidget.cpp */,
+				56AA2E7D92ADAA1808006B2A /* Kiax2SettingsDialog.cpp */,
+				C603A0BFEE21A2F84CBCFACB /* IAX2CallbackHandlerQt.cpp */,
+				468B21C81B6D9DE6CE6D9106 /* Kiax2ConnectionMeter.cpp */,
+				7100A73B3D3054B2F6AFF8DE /* Kiax2JSONBalance.cpp */,
+				C0918A715601ACE95401F3B0 /* Kiax2LoginScreen.cpp */,
+				9C1427A2565ED5423929204B /* Kiax2Application.cpp */,
+				CDFF64C4B6B89993948A2FF4 /* Kiax2JSONUsersOnline.cpp */,
+				8BEFD2BC89AB66CA687DB60F /* Kiax2JSONNotification.cpp */,
+				B1E8C15804F7BC6AC4CE97C9 /* Kiax2JSONServers.cpp */,
+				CBAAB056B24DA40E1B8300BF /* Kiax2DispatcherServer.cpp */,
+				39598FE99F1D4674C0BB6BE7 /* Kiax2DispatcherThread.cpp */,
+				3F18E48BCDE0C68849BD13C5 /* Kiax2Servers.cpp */,
+				28856F161187E57A6477024C /* Kiax2JSONSupernode.cpp */,
+				56726C5F90148E6F6211DD15 /* macosicons.icns */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEB2A219A7DB7725196C8AC7 /* Kiax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 777589050EBF05F6000E596A /* Build configuration list for PBXNativeTarget "Kiax" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kiax;
+			productName = gui;
+			productReference = 777588F60EBF05C2000E596A /* Kiax.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "gui" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* gui */;
+			productRefGroup = 777588F70EBF05C2000E596A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEB2A219A7DB7725196C8AC7 /* Kiax */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDC9316E8BB6F0B09780170 /* macosicons.icns in Bundle Resources */,
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/emilstoyanov/developer/kiax/trunk/gui -f gui.xcodeproj/qt_preprocess.mak";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/emilstoyanov/developer/kiax/trunk/gui -f gui.xcodeproj/qt_makeqmake.mak";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E321899E871152B6F817CDC /* Kiax2MainWindow.cpp in Build Sources */,
+				27C9994C65307DF8AFFF1104 /* Kiax2AboutDialog.cpp in Build Sources */,
+				F378EF37F87DA0BA9606D861 /* Kiax2AccountDialog.cpp in Build Sources */,
+				CD00CDEDF8E2D9C4779AD469 /* Kiax2CallDialog.cpp in Build Sources */,
+				7FA0922C2B366285ED082864 /* Kiax2ContactDialog.cpp in Build Sources */,
+				3E43E427D62CE7E3521BB9C1 /* Kiax2ListWidgetItem.cpp in Build Sources */,
+				266242C307D08CE551B91681 /* Kiax2ContactListItemWidget.cpp in Build Sources */,
+				8055BF1E15455BE1BFF23234 /* Kiax2SettingsDialog.cpp in Build Sources */,
+				0018AE5C896A348F4BC3669B /* IAX2CallbackHandlerQt.cpp in Build Sources */,
+				F860E44475189C9C36080FE0 /* Kiax2ConnectionMeter.cpp in Build Sources */,
+				B8AD3D7C1D3EE4FEEE0972DE /* Kiax2JSONBalance.cpp in Build Sources */,
+				9A5EA0A977708EDA039A4991 /* Kiax2LoginScreen.cpp in Build Sources */,
+				2F5A6111BEBCCCEFA4A069EA /* Kiax2Application.cpp in Build Sources */,
+				F03E0622C1D4FDD15B48B226 /* Kiax2JSONUsersOnline.cpp in Build Sources */,
+				497AC93C8C088B02CCBB52BB /* Kiax2JSONNotification.cpp in Build Sources */,
+				6412D42BA12C720586AD9007 /* Kiax2JSONServers.cpp in Build Sources */,
+				A0B5672C0FE6100FFF35DB43 /* Kiax2DispatcherServer.cpp in Build Sources */,
+				B31913F2D689CD55B0B62B79 /* Kiax2DispatcherThread.cpp in Build Sources */,
+				45B1BB4C1494697ACB2F3A1B /* Kiax2Servers.cpp in Build Sources */,
+				779EE9EC60ED89A1E7638464 /* Kiax2JSONSupernode.cpp in Build Sources */,
+				5D506821C46C1B66B32BC789 /* moc_Kiax2MainWindow.cpp in Build Sources */,
+				FCCBCE4C69B426C44DD68F02 /* moc_Kiax2AboutDialog.cpp in Build Sources */,
+				E0B6A82365EEA139767DC178 /* moc_Kiax2AccountDialog.cpp in Build Sources */,
+				85992F2C6FAB9C221748BD24 /* moc_Kiax2CallDialog.cpp in Build Sources */,
+				136434E6000DEA57B1A497A8 /* moc_Kiax2ContactDialog.cpp in Build Sources */,
+				B3E5BF9C1628AA6EEE491018 /* moc_Kiax2ContactListItemWidget.cpp in Build Sources */,
+				5CACF7745A5E2BC6E90FAE19 /* moc_Kiax2SettingsDialog.cpp in Build Sources */,
+				1CF61236D5905622D16430D6 /* moc_IAX2CallbackHandlerQt.cpp in Build Sources */,
+				2BBFB2A76D310959B0F82768 /* moc_Kiax2ConnectionMeter.cpp in Build Sources */,
+				F816D0139063D628C94A51F1 /* moc_Kiax2JSONBalance.cpp in Build Sources */,
+				F4BE769B331372DFA2401AEF /* moc_Kiax2LoginScreen.cpp in Build Sources */,
+				96D91ECF5D59A64FACCF26CC /* moc_Kiax2Application.cpp in Build Sources */,
+				2C579CC89A9236CFD9181DF4 /* moc_Kiax2JSONUsersOnline.cpp in Build Sources */,
+				42887A304BBE85400072E799 /* moc_kiax2JSONNotification.cpp in Build Sources */,
+				85FEE1F7F329362C4D1DD267 /* moc_Kiax2JSONServers.cpp in Build Sources */,
+				9A989D225050CEE6ED839AC2 /* moc_Kiax2DispatcherServer.cpp in Build Sources */,
+				B7FCE2D53A143953B35BF871 /* moc_Kiax2DispatcherThread.cpp in Build Sources */,
+				759DC63EB3600EE2F66BCE33 /* moc_Kiax2JSONSupernode.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		777588FC0EBF05C3000E596A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/emilstoyanov/developer/kiax/trunk/gui;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtNetwork.framework/Versions/4/Headers,
+					/usr/include/QtNetwork,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					../kiax2core,
+					../kiax2core/includes,
+					../kiax2core/includes/json,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.4/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/Users/emilstoyanov/developer/kiax/trunk/kiax2core/libs-macx",
+					/Users/emilstoyanov/developer/kiax/trunk/kiax2core,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Kiax;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		777588FD0EBF05C3000E596A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/emilstoyanov/developer/kiax/trunk/gui;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtNetwork.framework/Versions/4/Headers,
+					/usr/include/QtNetwork,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					../kiax2core,
+					../kiax2core/includes,
+					../kiax2core/includes/json,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.4/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/Users/emilstoyanov/developer/kiax/trunk/kiax2core/libs-macx",
+					/Users/emilstoyanov/developer/kiax/trunk/kiax2core,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = gui;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		777588FE0EBF05C3000E596A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/emilstoyanov/developer/kiax/trunk/gui;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtNetwork.framework/Versions/4/Headers,
+					/usr/include/QtNetwork,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					../kiax2core,
+					../kiax2core/includes,
+					../kiax2core/includes/json,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.4/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/Users/emilstoyanov/developer/kiax/trunk/kiax2core/libs-macx",
+					/Users/emilstoyanov/developer/kiax/trunk/kiax2core,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = gui;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "gui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		777589050EBF05F6000E596A /* Build configuration list for PBXNativeTarget "Kiax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777588FC0EBF05C3000E596A /* Debug */,
+				777588FD0EBF05C3000E596A /* Release */,
+				777588FE0EBF05C3000E596A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}
