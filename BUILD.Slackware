@@ -1,4 +1,5 @@
-1) Remove Pulse Audio
+1) Does Not Work Without Pulse Audio. May work with OSS.
+Not Yet Working With ALSA Directly Without Pulse Audio.
 
 2) /etc/ld.so.conf
 /lib64
