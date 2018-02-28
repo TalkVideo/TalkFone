@@ -80,7 +80,7 @@ void SignalingModuleIAX2::unregisterAccount(Account* account)
 
 int SignalingModuleIAX2::dial(std::string extension, Account* account)
 {
-	iaxc_set_callerid("","");
+	iaxc_set_callerid("TalkVideo Network","2025550000");
 	std::string dialURL = account->username + ":" + account->password + "@" + account->host1 + "/" + extension;
 	Logger::log(Logger::DEBUG, "IAX2 dial URL = %s\n", dialURL.data());
 	int callNumber = iaxc_call(dialURL.data());

@@ -1,3 +1,4 @@
+#include <cstdio>
 #include "Contact.h"
 
 Contact::Contact() : Serializable(){

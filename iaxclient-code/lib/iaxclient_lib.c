@@ -1452,6 +1452,7 @@ EXPORT int iaxc_call_ex(const char *num, const char* callerid_name, const char* 
 iaxc_call_bail:
 	put_iaxc_lock();
 
+	printf("-----> Call Number... %d\n",callNo);
 	return callNo;
 }
 

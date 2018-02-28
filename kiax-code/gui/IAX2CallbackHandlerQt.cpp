@@ -57,6 +57,9 @@ void IAX2CallbackHandlerQt::customEvent(QEvent * qevent)
 
 void IAX2CallbackHandlerQt::handleIaxCEvent(iaxc_event e)
 {
+
+	printf("-----> %s\n", __FUNCTION__);
+
 	switch (e.type)
 	{
 	case IAXC_EVENT_LEVELS:
@@ -66,8 +69,8 @@ void IAX2CallbackHandlerQt::handleIaxCEvent(iaxc_event e)
 		event_text(e.ev.text.type, e.ev.text.message);
 		break;
 	case IAXC_EVENT_STATE:
-		event_state(e.ev.call.callNo, e.ev.call.state, e.ev.call.remote, e.ev.call.remote_name,
-				e.ev.call.local, e.ev.call.local_context);
+		printf("-----> %d\n", e.type);
+		event_state(e.ev.call.callNo, e.ev.call.state, e.ev.call.remote, e.ev.call.remote_name, e.ev.call.local, e.ev.call.local_context);
 		break;
 	case IAXC_EVENT_REGISTRATION:
 		event_registration(e.ev.reg.id, e.ev.reg.reply, e.ev.reg.msgcount);
@@ -120,9 +123,10 @@ void IAX2CallbackHandlerQt::event_level(float in, float out)
 	}
 }
 
-void IAX2CallbackHandlerQt::event_state(int callNo, int state, char *remote,
-		char *remote_name, char *local, char *local_context)
+void IAX2CallbackHandlerQt::event_state(int callNo, int state, char *remote, char *remote_name, char *local, char *local_context)
 {
+
+	printf("Call State: %d\n", state);
 
 	/* Call state masks */
 	bool active = state & IAXC_CALL_STATE_ACTIVE;
@@ -131,7 +135,8 @@ void IAX2CallbackHandlerQt::event_state(int callNo, int state, char *remote,
 	bool complete = state & IAXC_CALL_STATE_COMPLETE;
 	bool selected = state & IAXC_CALL_STATE_SELECTED;
 
-	if (active)
+
+	if ( (active) || (state == 36) )
 	{ // there is a call progress
 		//ougoing calls
 		if ((outgoing) && ringing)

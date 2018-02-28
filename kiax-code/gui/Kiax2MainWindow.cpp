@@ -2057,10 +2057,18 @@ void Kiax2MainWindow::openCallDialog(QListWidget* listWidget, Kiax2CallAppearanc
 			int callNumber = api->dial(contact->extension, callAccount);
 			callAppearance->initiateCall(CALL_DIRECTION_OUTGOING);
 			Logger::log(Logger::DEBUG, "Kiax2MainWindow::openCallDialog: new call number is %d\n", callNumber);
+
 			if (callNumber>-1)
 			{
+
 				callMap[callNumber] = callAppearance;
+
+				Logger::log(Logger::INFO, "setting callNumber %d\n",callNumber);
+
 				callAppearance->setCallNumber(callNumber);
+
+				Logger::log(Logger::INFO, "callNumber was set to %d\n",callNumber);
+
 #if !defined(TABBED_LAYOUT)		
 				callAppearance->appearance->show();
 #else
@@ -2075,6 +2083,7 @@ void Kiax2MainWindow::openCallDialog(QListWidget* listWidget, Kiax2CallAppearanc
 			}
 			else
 			{
+				Logger::log(Logger::DEBUG, "1 What???\n");
 				delete callAppearance;
 			}
 		}
@@ -2084,6 +2093,9 @@ void Kiax2MainWindow::openCallDialog(QListWidget* listWidget, Kiax2CallAppearanc
 			Contact* contact = dialog->getContact();
 			int callNumber = api->dial(contact->extension, callAccount);
 			dialog->initiateCall(CALL_DIRECTION_OUTGOING);
+
+			Logger::log(Logger::DEBUG, "2 What???\n");
+
 			if (callNumber>-1)
 			{
 				callMap[callNumber] = dialog;

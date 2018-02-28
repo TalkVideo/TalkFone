@@ -124,6 +124,7 @@ void Kiax2CallAppearance::closeAppearance()
 void Kiax2CallAppearance::setCallNumber(int cNum)
 {
 	callNumber = cNum;
+	Logger::log(Logger::INFO, "setting callNumber %d\n",callNumber);
 }
 
 void Kiax2CallAppearance::setContact(Contact* contactToCall)

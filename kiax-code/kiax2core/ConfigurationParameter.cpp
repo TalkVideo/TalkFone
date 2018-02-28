@@ -1,5 +1,6 @@
 #include "ConfigurationParameter.h"
 #include "Logger.h"
+#include <cstdio>
 
 ConfigurationParameter::ConfigurationParameter() : Serializable(){
     objectType = "ConfigurationParameter";

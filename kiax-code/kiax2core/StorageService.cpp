@@ -1,6 +1,7 @@
 #include "StorageService.h"
 #include <dirent.h>
 #include <unistd.h>
+#include <cstdlib>
 #ifdef WIN32DEP
 #include <windows.h>
 #include "setupapi.h"

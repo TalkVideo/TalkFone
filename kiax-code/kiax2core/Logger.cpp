@@ -1,4 +1,5 @@
 #include "Logger.h"
+#include <cstdio>
 
 int Logger::debugLevel;
 
