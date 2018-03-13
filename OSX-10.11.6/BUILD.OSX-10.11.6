@@ -12,9 +12,26 @@ Edit These Files To Use Libraries Built In The System:
 kiax2core/gui.pro 
 kiax2core/kiax2core.pro 
 
-qmake -spec macx-g++ kiax2.pro 
 
 requires libldns for dottel utils?
 libldns ./configure --disable-dane-verify  --disable-dane-ta-usage
 
 Remember to select uLaw Codec. (Or No Sound).
+
+From within the kiax-code directory:
+qmake -spec macx-g++ kiax2.pro 
+make
+
+make clean
+make distclean
+
+
+This directory contains libraries that were notfound in the system.
+otherwise use Brew.
+kiax-code/kiax2core/libs-macx/
+
+
+kiax-code/kiax2core/libkiax2core.dylib must
+be distributed with gui/gui.app
+
+Also Icons.

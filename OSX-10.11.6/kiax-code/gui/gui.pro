@@ -52,7 +52,7 @@ contains( KIAXOPT, dottel ): {
 	}
 }
 
-# comment if you don't have hold() in your iaxclient
+# comment if you dont have hold() in your iaxclient
 # DEFINES += IAXCLIENT_HOLD_HACK
 
 QT += network
@@ -81,7 +81,8 @@ FORMS += kiax2windowAlt.ui \
 			contactlistitemwidget.ui \
 			settingsdialog.ui \
 			registerdialog.ui \
-			loginscreen.ui
+			loginscreen.ui \
+			dotteldialog.ui
 			
 HEADERS += Kiax2MainWindow.h \
 			Kiax2AboutDialog.h \

@@ -28,7 +28,7 @@ DEFINES += MACXDEP
 # Comment if you want dynamic lib
 # CONFIG += staticlib
 
-# comment if you don't have hold() in your iaxclient
+# comment if you dont have hold() in your iaxclient
 # DEFINES += IAXCLIENT_HOLD_HACK
 
 # KIAXOPT += dottel
