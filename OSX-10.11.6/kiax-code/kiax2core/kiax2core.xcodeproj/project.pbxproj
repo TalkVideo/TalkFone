@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		D7BA7D76DAB5DD13389D6332 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Qmake";
+			neededFileNames = (
+				);
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Volumes/Space/TalkFone/kiax-code/kiax2core\ -f\ \'kiax2core.xcodeproj/qt_makeqmake.mak\'";
+		};
+		90DFE7D5D210150C595B44E7 = {
+			isa = PBXFileReference;
+			name = "dottelutils.c";
+			path = "../dottelutils/dottelutils.c";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		C603751A1691D1659BF538D8 = {
+			fileRef = "90DFE7D5D210150C595B44E7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FEEFDCC8900D6C6F4D161D41 = {
+			isa = PBXFileReference;
+			name = "CppDotTelUtils.cpp";
+			path = "../dottelutils/CppDotTelUtils.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		CB0BE6EBEE37C3BE3AEEA746 = {
+			fileRef = "FEEFDCC8900D6C6F4D161D41";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A4F5019EC6FB9B752467E190 = {
+			isa = PBXFileReference;
+			name = "APIBinder.cpp";
+			path = "../APIBinder.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7320987FE59B5245F196A1C0 = {
+			fileRef = "A4F5019EC6FB9B752467E190";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C67246D2E4E185177D43169A = {
+			isa = PBXFileReference;
+			name = "AccountsModuleImpl.cpp";
+			path = "../AccountsModuleImpl.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		7E55267A4C5C9E66E7DA922F = {
+			fileRef = "C67246D2E4E185177D43169A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		33CEBB654612BAAD81A0CC51 = {
+			isa = PBXFileReference;
+			name = "Contact.cpp";
+			path = "../Contact.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B8F98F255180908F39DEC348 = {
+			fileRef = "33CEBB654612BAAD81A0CC51";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		116794E297AB957DBCDF3B7E = {
+			isa = PBXFileReference;
+			name = "Serializable.cpp";
+			path = "../Serializable.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0118A89D3EDF7642F8E9741E = {
+			fileRef = "116794E297AB957DBCDF3B7E";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		54D8F9BD522F1871F9F1211B = {
+			isa = PBXFileReference;
+			name = "APIBinderDefault.cpp";
+			path = "../APIBinderDefault.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		20AE086C33D92BCBE5201CE2 = {
+			fileRef = "54D8F9BD522F1871F9F1211B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F19D694C4E2323553326BDE6 = {
+			isa = PBXFileReference;
+			name = "CDR.cpp";
+			path = "../CDR.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0AD92CC0C9605347B3A98FA2 = {
+			fileRef = "F19D694C4E2323553326BDE6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		160FBD781A747F992EB7DFC0 = {
+			isa = PBXFileReference;
+			name = "ContactsModuleImpl.cpp";
+			path = "../ContactsModuleImpl.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		9DD5F7888E62151C24EE255F = {
+			fileRef = "160FBD781A747F992EB7DFC0";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		DB16A70BA9D533ACCAC65081 = {
+			isa = PBXFileReference;
+			name = "SignalingModuleIAX2.cpp";
+			path = "../SignalingModuleIAX2.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		141C3034F0A281F4D2B6C5E4 = {
+			fileRef = "DB16A70BA9D533ACCAC65081";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E5D76C4B664930E9BB9EDF08 = {
+			isa = PBXFileReference;
+			name = "AbstractModule.cpp";
+			path = "../AbstractModule.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		73D8D093059BA73C27F51781 = {
+			fileRef = "E5D76C4B664930E9BB9EDF08";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		BE788343DB78566CA491A073 = {
+			isa = PBXFileReference;
+			name = "CDRModuleImpl.cpp";
+			path = "../CDRModuleImpl.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		40173DCAE11D5996A254ADF2 = {
+			fileRef = "BE788343DB78566CA491A073";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4A52F2098742721A4F79AB66 = {
+			isa = PBXFileReference;
+			name = "Core.cpp";
+			path = "../Core.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		6066ECDCE5FEB6452503C981 = {
+			fileRef = "4A52F2098742721A4F79AB66";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		6F046972C50CE12A09FA4F91 = {
+			isa = PBXFileReference;
+			name = "StorageService.cpp";
+			path = "../StorageService.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		832C5CDA932FBCB80FEB24A5 = {
+			fileRef = "6F046972C50CE12A09FA4F91";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F67CABA54F239AA13B31E9C2 = {
+			isa = PBXFileReference;
+			name = "AbstractService.cpp";
+			path = "../AbstractService.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D9E8E972B51847ABCF02A6D4 = {
+			fileRef = "F67CABA54F239AA13B31E9C2";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		6B96DE15863490137E5C166E = {
+			isa = PBXFileReference;
+			name = "Configuration.cpp";
+			path = "../Configuration.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D78253FD996631C48A0E0A99 = {
+			fileRef = "6B96DE15863490137E5C166E";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C462FF3BC82175CD1CA1F58F = {
+			isa = PBXFileReference;
+			name = "Logger.cpp";
+			path = "../Logger.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		05CF4A399DAB85A92DEC440E = {
+			fileRef = "C462FF3BC82175CD1CA1F58F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		44F9317AF058BE08AB844CE8 = {
+			isa = PBXFileReference;
+			name = "Account.cpp";
+			path = "../Account.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		333F1A93B1F978B28A2BAC95 = {
+			fileRef = "44F9317AF058BE08AB844CE8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		61CB5A10861B20407B4C5914 = {
+			isa = PBXFileReference;
+			name = "ConfigurationParameter.cpp";
+			path = "../ConfigurationParameter.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DE0D5A95C1354435BA2949B8 = {
+			fileRef = "61CB5A10861B20407B4C5914";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2391973458D7B7B081E4505F = {
+			isa = PBXFileReference;
+			name = "NamingService.cpp";
+			path = "../NamingService.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		E4822BB9E070F68B8520D1B4 = {
+			fileRef = "2391973458D7B7B081E4505F";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		BF3E032660FFD903324BA3A7 = {
+			isa = PBXFileReference;
+			name = "ConfigurationModuleImpl.cpp";
+			path = "../ConfigurationModuleImpl.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		DA6EBA264A15467D36BACE35 = {
+			fileRef = "BF3E032660FFD903324BA3A7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D8B16CB106C920B4ACCFE81B = {
+			isa = PBXFileReference;
+			name = "tinystr.cpp";
+			path = "../tinyxml/tinystr.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		045F1E26BCDCBE442CB768CB = {
+			fileRef = "D8B16CB106C920B4ACCFE81B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C815410F60D2E857CFB63A02 = {
+			isa = PBXFileReference;
+			name = "tinyxml.cpp";
+			path = "../tinyxml/tinyxml.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B205EFDF4954ED650A29D3C4 = {
+			fileRef = "C815410F60D2E857CFB63A02";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		5B213B1D1A9501F87D6394F7 = {
+			isa = PBXFileReference;
+			name = "tinyxmlerror.cpp";
+			path = "../tinyxml/tinyxmlerror.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0248AE7BC21DA948A7E7AB35 = {
+			fileRef = "5B213B1D1A9501F87D6394F7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E2E44449EEB3B255AEC8A046 = {
+			isa = PBXFileReference;
+			name = "tinyxmlparser.cpp";
+			path = "../tinyxml/tinyxmlparser.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D0F34AA35B7EB25EEC9F37EF = {
+			fileRef = "E2E44449EEB3B255AEC8A046";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C6541A6E21ABD915BAB9BD7D = {
+			isa = PBXFileReference;
+			name = "dottelutils.h";
+			path = "../dottelutils/dottelutils.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		EB60E3123D8BD4395C6E3FBF = {
+			isa = PBXFileReference;
+			name = "CppDotTelutils.h";
+			path = "../dottelutils/CppDotTelutils.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		98CB53B1C4A5E3570FF23502 = {
+			isa = PBXFileReference;
+			name = "APIBinder.h";
+			path = "../APIBinder.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		97FD422D420988D913299B13 = {
+			isa = PBXFileReference;
+			name = "CDR.h";
+			path = "../CDR.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		1168A6D75FBB9A58E2BD4F9D = {
+			isa = PBXFileReference;
+			name = "ContactsModule.h";
+			path = "../ContactsModule.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		D96A08CACF12AD6A99BF5B8A = {
+			isa = PBXFileReference;
+			name = "SignalingAPI.h";
+			path = "../SignalingAPI.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		186FCB0CC085A222CB8E0284 = {
+			isa = PBXFileReference;
+			name = "APIBinderDefault.h";
+			path = "../APIBinderDefault.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		7C1B806BCB93B9280476F18C = {
+			isa = PBXFileReference;
+			name = "CDRAPI.h";
+			path = "../CDRAPI.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		1FDAC4872A878B2F13374B41 = {
+			isa = PBXFileReference;
+			name = "ContactsModuleImpl.h";
+			path = "../ContactsModuleImpl.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		94454CD25D58D3FF224AE9FE = {
+			isa = PBXFileReference;
+			name = "SignalingCallback.h";
+			path = "../SignalingCallback.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		D4AE13F5951FBB585C7FD8AC = {
+			isa = PBXFileReference;
+			name = "AbstractModule.h";
+			path = "../AbstractModule.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		DA7C4782A3021AA0C5A6167C = {
+			isa = PBXFileReference;
+			name = "CDRModule.h";
+			path = "../CDRModule.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		D84657D81C718A4243DCAE8C = {
+			isa = PBXFileReference;
+			name = "Core.h";
+			path = "../Core.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		60BB4CBEFACF1F1A08C1629E = {
+			isa = PBXFileReference;
+			name = "SignalingModule.h";
+			path = "../SignalingModule.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		04573EF9A01048EEA9519D39 = {
+			isa = PBXFileReference;
+			name = "AbstractService.h";
+			path = "../AbstractService.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		F5CFB256819542FD1E5EFD2B = {
+			isa = PBXFileReference;
+			name = "CDRModuleImpl.h";
+			path = "../CDRModuleImpl.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		C2918CA156CA7EFE118768FC = {
+			isa = PBXFileReference;
+			name = "Logger.h";
+			path = "../Logger.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		FC7F2B5B455A24A550148CBC = {
+			isa = PBXFileReference;
+			name = "SignalingModuleIAX2.h";
+			path = "../SignalingModuleIAX2.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		C015C88041910AAA2FD28896 = {
+			isa = PBXFileReference;
+			name = "Account.h";
+			path = "../Account.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		9FB94415D02E096654E02FFF = {
+			isa = PBXFileReference;
+			name = "Configuration.h";
+			path = "../Configuration.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		A1490BDFAE9C50183C7E668B = {
+			isa = PBXFileReference;
+			name = "NamingService.h";
+			path = "../NamingService.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		7DBB966371E51467F3921D70 = {
+			isa = PBXFileReference;
+			name = "StorageAPI.h";
+			path = "../StorageAPI.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		47B200A4AEE7D2DE3365CD29 = {
+			isa = PBXFileReference;
+			name = "AccountsAPI.h";
+			path = "../AccountsAPI.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		FB9D7AF586FC2C1D91A94DF6 = {
+			isa = PBXFileReference;
+			name = "ConfigurationParameter.h";
+			path = "../ConfigurationParameter.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		0556A5623528DA16346E6A2B = {
+			isa = PBXFileReference;
+			name = "PConfiguration.h";
+			path = "../PConfiguration.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		61E66A1B7DAA68BC92B8E867 = {
+			isa = PBXFileReference;
+			name = "StorageService.h";
+			path = "../StorageService.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		4A8F8A799AD785FDA7F04916 = {
+			isa = PBXFileReference;
+			name = "AccountsModule.h";
+			path = "../AccountsModule.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		4A79DE05EB42B71282486ED2 = {
+			isa = PBXFileReference;
+			name = "Contact.h";
+			path = "../Contact.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		3436E5E883C3F0DA8F748631 = {
+			isa = PBXFileReference;
+			name = "PConstants.h";
+			path = "../PConstants.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		F7C4D7648CCED595345F263D = {
+			isa = PBXFileReference;
+			name = "AccountsModuleImpl.h";
+			path = "../AccountsModuleImpl.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		9CEA3238FB90742671AADEBC = {
+			isa = PBXFileReference;
+			name = "ContactsAPI.h";
+			path = "../ContactsAPI.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		A1B51122C7DF1CB2AF57362D = {
+			isa = PBXFileReference;
+			name = "Serializable.h";
+			path = "../Serializable.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		0A7C9649F335E4B93A39AB1F = {
+			isa = PBXFileReference;
+			name = "IAX2CallbackHandler.h";
+			path = "../IAX2CallbackHandler.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		1102F7DEE416A4E1CDE651C0 = {
+			isa = PBXFileReference;
+			name = "ConfigurationAPI.h";
+			path = "../ConfigurationAPI.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		0C5390684BD318444B166EB5 = {
+			isa = PBXFileReference;
+			name = "ConfigurationModule.h";
+			path = "../ConfigurationModule.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		129C1ED7E20E5C58A921BA1D = {
+			isa = PBXFileReference;
+			name = "ConfigurationModuleImpl.h";
+			path = "../ConfigurationModuleImpl.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		F5F88478114778D3E4EE6134 = {
+			isa = PBXFileReference;
+			name = "tinystr.h";
+			path = "../tinyxml/tinystr.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		E2BDA4FCF893F190717C36C2 = {
+			isa = PBXFileReference;
+			name = "tinyxml.h";
+			path = "../tinyxml/tinyxml.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		0CF8E2221C6FB60794CA4D04 = {
+			isa = PBXFileReference;
+			name = "kiax2core.pro";
+			path = "kiax2core.pro";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		883D7615C4D2DE3FA1218F12 = {
+			isa = PBXGroup;
+			children = (
+				"4458B98565818D7E2682FA2D");
+			name = "Headers";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		4458B98565818D7E2682FA2D = {
+			isa = PBXGroup;
+			children = (
+				"6D08AED8820978CD0526D563",
+				"98CB53B1C4A5E3570FF23502",
+				"97FD422D420988D913299B13",
+				"1168A6D75FBB9A58E2BD4F9D",
+				"D96A08CACF12AD6A99BF5B8A",
+				"186FCB0CC085A222CB8E0284",
+				"7C1B806BCB93B9280476F18C",
+				"1FDAC4872A878B2F13374B41",
+				"94454CD25D58D3FF224AE9FE",
+				"D4AE13F5951FBB585C7FD8AC",
+				"DA7C4782A3021AA0C5A6167C",
+				"D84657D81C718A4243DCAE8C",
+				"60BB4CBEFACF1F1A08C1629E",
+				"04573EF9A01048EEA9519D39",
+				"F5CFB256819542FD1E5EFD2B",
+				"C2918CA156CA7EFE118768FC",
+				"FC7F2B5B455A24A550148CBC",
+				"C015C88041910AAA2FD28896",
+				"9FB94415D02E096654E02FFF",
+				"A1490BDFAE9C50183C7E668B",
+				"7DBB966371E51467F3921D70",
+				"47B200A4AEE7D2DE3365CD29",
+				"FB9D7AF586FC2C1D91A94DF6",
+				"0556A5623528DA16346E6A2B",
+				"61E66A1B7DAA68BC92B8E867",
+				"4A8F8A799AD785FDA7F04916",
+				"4A79DE05EB42B71282486ED2",
+				"3436E5E883C3F0DA8F748631",
+				"F7C4D7648CCED595345F263D",
+				"9CEA3238FB90742671AADEBC",
+				"A1B51122C7DF1CB2AF57362D",
+				"0A7C9649F335E4B93A39AB1F",
+				"1102F7DEE416A4E1CDE651C0",
+				"0C5390684BD318444B166EB5",
+				"129C1ED7E20E5C58A921BA1D",
+				"3890CC4A90E20DB77644849F");
+			name = "..";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		6D08AED8820978CD0526D563 = {
+			isa = PBXGroup;
+			children = (
+				"C6541A6E21ABD915BAB9BD7D",
+				"EB60E3123D8BD4395C6E3FBF");
+			name = "dottelutils";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		3890CC4A90E20DB77644849F = {
+			isa = PBXGroup;
+			children = (
+				"F5F88478114778D3E4EE6134",
+				"E2BDA4FCF893F190717C36C2");
+			name = "tinyxml";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		BFA3A29D17FD123C907B6E35 = {
+			isa = PBXGroup;
+			children = (
+				"FD48A05D98C8DEDB49E3C3BD",
+				"A4F5019EC6FB9B752467E190",
+				"C67246D2E4E185177D43169A",
+				"33CEBB654612BAAD81A0CC51",
+				"116794E297AB957DBCDF3B7E",
+				"54D8F9BD522F1871F9F1211B",
+				"F19D694C4E2323553326BDE6",
+				"160FBD781A747F992EB7DFC0",
+				"DB16A70BA9D533ACCAC65081",
+				"E5D76C4B664930E9BB9EDF08",
+				"BE788343DB78566CA491A073",
+				"4A52F2098742721A4F79AB66",
+				"6F046972C50CE12A09FA4F91",
+				"F67CABA54F239AA13B31E9C2",
+				"6B96DE15863490137E5C166E",
+				"C462FF3BC82175CD1CA1F58F",
+				"44F9317AF058BE08AB844CE8",
+				"61CB5A10861B20407B4C5914",
+				"2391973458D7B7B081E4505F",
+				"BF3E032660FFD903324BA3A7",
+				"E9CAAE416FD272B8F97BF45F");
+			name = "..";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		FD48A05D98C8DEDB49E3C3BD = {
+			isa = PBXGroup;
+			children = (
+				"90DFE7D5D210150C595B44E7",
+				"FEEFDCC8900D6C6F4D161D41");
+			name = "dottelutils";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		E9CAAE416FD272B8F97BF45F = {
+			isa = PBXGroup;
+			children = (
+				"D8B16CB106C920B4ACCFE81B",
+				"C815410F60D2E857CFB63A02",
+				"5B213B1D1A9501F87D6394F7",
+				"E2E44449EEB3B255AEC8A046");
+			name = "tinyxml";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 = {
+			isa = PBXGroup;
+			children = (
+				"BFA3A29D17FD123C907B6E35");
+			name = "Sources";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		7CABE3C80E79AD2B307756D2 = {
+			isa = PBXGroup;
+			children = (
+				"0CF8E2221C6FB60794CA4D04");
+			name = "Sources [qmake]";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		A0A52A2ADF7A1E2A99738674 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				"C603751A1691D1659BF538D8",
+				"CB0BE6EBEE37C3BE3AEEA746",
+				"7320987FE59B5245F196A1C0",
+				"7E55267A4C5C9E66E7DA922F",
+				"B8F98F255180908F39DEC348",
+				"0118A89D3EDF7642F8E9741E",
+				"20AE086C33D92BCBE5201CE2",
+				"0AD92CC0C9605347B3A98FA2",
+				"9DD5F7888E62151C24EE255F",
+				"141C3034F0A281F4D2B6C5E4",
+				"73D8D093059BA73C27F51781",
+				"40173DCAE11D5996A254ADF2",
+				"6066ECDCE5FEB6452503C981",
+				"832C5CDA932FBCB80FEB24A5",
+				"D9E8E972B51847ABCF02A6D4",
+				"D78253FD996631C48A0E0A99",
+				"05CF4A399DAB85A92DEC440E",
+				"333F1A93B1F978B28A2BAC95",
+				"DE0D5A95C1354435BA2949B8",
+				"E4822BB9E070F68B8520D1B4",
+				"DA6EBA264A15467D36BACE35",
+				"045F1E26BCDCBE442CB768CB",
+				"B205EFDF4954ED650A29D3C4",
+				"0248AE7BC21DA948A7E7AB35",
+				"D0F34AA35B7EB25EEC9F37EF");
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Preprocessors";
+			neededFileNames = (
+				"C603751A1691D1659BF538D8",
+				"CB0BE6EBEE37C3BE3AEEA746",
+				"7320987FE59B5245F196A1C0",
+				"7E55267A4C5C9E66E7DA922F",
+				"B8F98F255180908F39DEC348",
+				"0118A89D3EDF7642F8E9741E",
+				"20AE086C33D92BCBE5201CE2",
+				"0AD92CC0C9605347B3A98FA2",
+				"9DD5F7888E62151C24EE255F",
+				"141C3034F0A281F4D2B6C5E4",
+				"73D8D093059BA73C27F51781",
+				"40173DCAE11D5996A254ADF2",
+				"6066ECDCE5FEB6452503C981",
+				"832C5CDA932FBCB80FEB24A5",
+				"D9E8E972B51847ABCF02A6D4",
+				"D78253FD996631C48A0E0A99",
+				"05CF4A399DAB85A92DEC440E",
+				"333F1A93B1F978B28A2BAC95",
+				"DE0D5A95C1354435BA2949B8",
+				"E4822BB9E070F68B8520D1B4",
+				"DA6EBA264A15467D36BACE35",
+				"045F1E26BCDCBE442CB768CB",
+				"B205EFDF4954ED650A29D3C4",
+				"0248AE7BC21DA948A7E7AB35",
+				"D0F34AA35B7EB25EEC9F37EF");
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Volumes/Space/TalkFone/kiax-code/kiax2core\ -f\ \'kiax2core.xcodeproj/qt_preprocess.mak\'";
+		};
+		C29B8785722055ED95EF7B57 = {
+			buildActionMask = 2147483647;
+			files = (
+				"C603751A1691D1659BF538D8",
+				"CB0BE6EBEE37C3BE3AEEA746",
+				"7320987FE59B5245F196A1C0",
+				"7E55267A4C5C9E66E7DA922F",
+				"B8F98F255180908F39DEC348",
+				"0118A89D3EDF7642F8E9741E",
+				"20AE086C33D92BCBE5201CE2",
+				"0AD92CC0C9605347B3A98FA2",
+				"9DD5F7888E62151C24EE255F",
+				"141C3034F0A281F4D2B6C5E4",
+				"73D8D093059BA73C27F51781",
+				"40173DCAE11D5996A254ADF2",
+				"6066ECDCE5FEB6452503C981",
+				"832C5CDA932FBCB80FEB24A5",
+				"D9E8E972B51847ABCF02A6D4",
+				"D78253FD996631C48A0E0A99",
+				"05CF4A399DAB85A92DEC440E",
+				"333F1A93B1F978B28A2BAC95",
+				"DE0D5A95C1354435BA2949B8",
+				"E4822BB9E070F68B8520D1B4",
+				"DA6EBA264A15467D36BACE35",
+				"045F1E26BCDCBE442CB768CB",
+				"B205EFDF4954ED650A29D3C4",
+				"0248AE7BC21DA948A7E7AB35",
+				"D0F34AA35B7EB25EEC9F37EF");
+			isa = PBXSourcesBuildPhase;
+			name = "Build Sources";
+		};
+		2A1043669E6E5A7426EA502A = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXFrameworksBuildPhase;
+			name = "Frameworks & Libraries";
+		};
+		05596AB53D8D521C69802C27 = {
+			children = (
+				"FB61758D0F0FDA4BA867C3D5",
+				"883D7615C4D2DE3FA1218F12",
+				"7CABE3C80E79AD2B307756D2");
+			isa = PBXGroup;
+			name = "kiax2core";
+			path = "";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		1687B9E01126FF1EAC4524CA = {
+			isa = PBXFileReference;
+			explicitFileType = "compiled.mach-o.dylib";
+			path = "libkiax2core.a";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		068F80C7519D0528FB08E821 = {
+			children = (
+				"1687B9E01126FF1EAC4524CA");
+			isa = PBXGroup;
+			name = "Products";
+			refType = 4;
+		};
+		2844FB3A0C504FB6DEC1BE69 = {
+			buildPhases = (
+				"D7BA7D76DAB5DD13389D6332",
+				"A0A52A2ADF7A1E2A99738674",
+				"C29B8785722055ED95EF7B57",
+				"2A1043669E6E5A7426EA502A");
+			buildSettings = {
+				CC = "/Applications/Xcode.app/Contents/Developer/usr/bin/gcc";
+				CPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/usr/bin/g++";
+				LEXFLAGS = "";
+				YACCFLAGS = "-d";
+				OTHER_REZFLAGS = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				PREBINDING = NO;
+				BUILD_ROOT = "/Volumes/Space/TalkFone/kiax-code/kiax2core";
+				INSTALL_PATH = "";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.4";
+				LIBRARY_STYLE = "STATIC";
+				PRODUCT_NAME = "kiax2core";
+			};
+			conditionalBuildSettings = {
+			};
+			dependencies = (
+				);
+			productReference = "1687B9E01126FF1EAC4524CA";
+			shouldUseHeadermap = 1;
+			buildConfigurationList = 17B3380A4D6A7D415E7F2E1E;
+			isa = PBXNativeTarget;
+			name = "kiax2core";
+			productName = "kiax2core";
+			productType = "com.apple.product-type.library.static";
+			startupPath = "<<ProjectDirectory>>";
+		};
+		4B72B24813252891014BCF61 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				PRODUCT_NAME = "kiax2core";
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/QtCore.framework/Versions/4/Headers",
+					"/usr/include/QtCore",
+					"/Library/Frameworks/QtGui.framework/Versions/4/Headers",
+					"/usr/include/QtGui",
+					"/usr/include",
+					"../includes",
+					"../includes/ldns",
+					".",
+					"../../kiax2core",
+					"/usr/local/include",
+					"/System/Library/Frameworks/CarbonCore.framework/Headers",
+					".",
+					"/usr/local/Qt4.8/mkspecs/macx-xcode");
+				LIBRARY_SEARCH_PATHS = (
+					);
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Library/Frameworks");
+				INFOPLIST_FILE = "Info.plist";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DUSE_DOTTEL",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DUSE_DOTTEL",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				ARCHS = "x86_64";
+			};
+			name = "Debug";
+		};
+		BEC09A62E69C3553534FF35E = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				PRODUCT_NAME = "kiax2core";
+				LIBRARY_STYLE = "STATIC";
+				PRODUCT_NAME = "kiax2core";
+			};
+			name = "Debug";
+		};
+		2C641C3335766025DD51B7BD = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				PRODUCT_NAME = "kiax2core";
+			};
+			isa = "PBXBuildStyle";
+			name = "Debug";
+		};
+		D70590BEB531B51029F711BB = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "kiax2core";
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/QtCore.framework/Versions/4/Headers",
+					"/usr/include/QtCore",
+					"/Library/Frameworks/QtGui.framework/Versions/4/Headers",
+					"/usr/include/QtGui",
+					"/usr/include",
+					"../includes",
+					"../includes/ldns",
+					".",
+					"../../kiax2core",
+					"/usr/local/include",
+					"/System/Library/Frameworks/CarbonCore.framework/Headers",
+					".",
+					"/usr/local/Qt4.8/mkspecs/macx-xcode");
+				LIBRARY_SEARCH_PATHS = (
+					);
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Library/Frameworks");
+				INFOPLIST_FILE = "Info.plist";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DUSE_DOTTEL",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-fPIC",
+					"-Wall",
+					"-W",
+					"-DMACXDEP",
+					"-DUSE_DOTTEL",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				ARCHS = "x86_64";
+			};
+			name = "Release";
+		};
+		8C7174830A1E4DCBA0332EC1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "kiax2core";
+				LIBRARY_STYLE = "STATIC";
+				PRODUCT_NAME = "kiax2core";
+			};
+			name = "Release";
+		};
+		26DE8D2AEA4B3714B41E931F = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "kiax2core";
+			};
+			isa = "PBXBuildStyle";
+			name = "Release";
+		};
+		CC82A9286117DFED018F418F = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"4B72B24813252891014BCF61",
+				"D70590BEB531B51029F711BB");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationIsName = "Debug";
+		};
+		17B3380A4D6A7D415E7F2E1E = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"BEC09A62E69C3553534FF35E",
+				"8C7174830A1E4DCBA0332EC1");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationIsName = "Debug";
+		};
+		91B15E841AA80083484172DE = {
+			buildStyles = (
+				"2C641C3335766025DD51B7BD",
+				"26DE8D2AEA4B3714B41E931F");
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = "05596AB53D8D521C69802C27";
+			buildConfigurationList = "CC82A9286117DFED018F418F";
+			projectDirPath = "";
+			targets = (
+				"2844FB3A0C504FB6DEC1BE69");
+		};
+	};
+	rootObject = "91B15E841AA80083484172DE";
+}
