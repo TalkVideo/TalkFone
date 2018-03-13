@@ -1,43 +1,20 @@
-1) Does Not Work Without Pulse Audio. May work with OSS.
-Not Yet Working With ALSA Directly Without Pulse Audio.
+Mac needs sound-siphon, etc to capture output for OBS
 
-2) /etc/ld.so.conf
-/lib64
-/usr/lib64
-/usr/local/lib
-/usr/local/lib64
-/lib
-/usr/lib
-/usr/x86_64-slackware-linux/lib64
-/usr/lib64/seamonkey
-<install-dir>/Qt/5.9.3/gcc_64/lib
-
-3) Fix pkg-config locations.
-Include /usr/local/lib/pkgconfig
-cp /usr/local/lib/pkgconfig/* /usr/share/pkgconfig
-rm -rf /usr/local/lib/pkgconfig
-ln -s /usr/share/pkgconfig /usr/local/lib/pkgconfig
-
-
-4) IAX Client:
+IAX Client:
 requires portaudio
 requires speex
 requires gsm  Used local gsm.
 requires vidcap -- may be disabled  ./configure --enable-local-gsm --enable-video=no --enable-clients=testcall --enable-static (iaxphone iaxcomm stresstest, etc require additional deps). http://www.quut.com/gsm/gsm-1.0.17.tar.gz
 
-5) Kiax:
+Kiax:
 See Source Diffs.
 Edit These Files To Use Libraries Built In The System:
 kiax2core/gui.pro 
 kiax2core/kiax2core.pro 
 
-kiax20-linux-static-libs.tar.gz
-The libraries in this file are 32-Bit i386, and missing
-libldns. But it shows the dependencies, and helps in
-identifying versions used.
+qmake -spec macx-g++ kiax2.pro 
 
-requires libldns
+requires libldns for dottel utils?
 libldns ./configure --disable-dane-verify  --disable-dane-ta-usage
 
-Add Kiax user to audio and video groups
 Remember to select uLaw Codec. (Or No Sound).
