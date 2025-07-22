@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FAF11E5216C035C01B54FF /* Account.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 67C94AA6D8DCCBE74797597A /* Account.cpp */; settings = {ATTRIBUTES = (); }; };
+		055B426B36459E702F8B98A2 /* ContactsModuleImpl.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7175B7F94529FBD6BB804A24 /* ContactsModuleImpl.cpp */; settings = {ATTRIBUTES = (); }; };
+		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
+		0E39F9CBFED69F8F8E8AFD89 /* AbstractService.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5932418EA27951429F02D302 /* AbstractService.cpp */; settings = {ATTRIBUTES = (); }; };
+		35F46FBE47DB65308B8DB678 /* CDR.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3036E8C3FB84F3B670FBACEB /* CDR.cpp */; settings = {ATTRIBUTES = (); }; };
+		38621A04E2F637E54251A5A8 /* CDRModuleImpl.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3D1E0AC785C4795981A36E13 /* CDRModuleImpl.cpp */; settings = {ATTRIBUTES = (); }; };
+		487D56C77A49B506F7C776AC /* APIBinder.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 25937524E69C2DFE9A9C3C9F /* APIBinder.cpp */; settings = {ATTRIBUTES = (); }; };
+		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
+		51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 821416211D63F190AAAD016A /* AppKit.framework */; };
+		618CD5C2F9FB54EC2D6CC157 /* AccountsModuleImpl.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 85664BAB737AC7866486BE41 /* AccountsModuleImpl.cpp */; settings = {ATTRIBUTES = (); }; };
+		6B20A701B7AB86E27C8E1D09 /* libsqlite3.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = E242A6A0874C32569A2AC356 /* libsqlite3.dylib */; };
+		75EB80FFB90433DD3DC4F9B3 /* libiaxclient.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 508AD0D3927166166ACAF1FF /* libiaxclient.dylib */; };
+		7725F5180E87D3B50039046E /* libkiax2core.dylib in Project Copy */ = {isa = PBXBuildFile; fileRef = 7725F5160E87D3B50039046E /* libkiax2core.dylib */; };
+		88117C1CD3BD413F591F55C4 /* Serializable.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 58F18AA246AF7F8318284B28 /* Serializable.cpp */; settings = {ATTRIBUTES = (); }; };
+		939E184D0F1D9CF6C74056A6 /* Core.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 74AC90F0AD1FC3DF3C4C1F33 /* Core.cpp */; settings = {ATTRIBUTES = (); }; };
+		9C4116E6FDC20FC8B8AF6619 /* NamingService.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 60D343E81342588B39951390 /* NamingService.cpp */; settings = {ATTRIBUTES = (); }; };
+		9D0FB796847F70A18817AAC0 /* ConfigurationParameter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4D630841F36FB1AA135BE7E1 /* ConfigurationParameter.cpp */; settings = {ATTRIBUTES = (); }; };
+		A0376D2C4E9E31BDA98424FF /* Contact.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4448D93438AE6E452DA15AE7 /* Contact.cpp */; settings = {ATTRIBUTES = (); }; };
+		B9A53761B6D39157E45F5E67 /* StorageService.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BC9EF26EA22BCD4567983852 /* StorageService.cpp */; settings = {ATTRIBUTES = (); }; };
+		C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA138F75C9F545CDAE7FB264 /* Carbon.framework */; };
+		CB9CB97329F18BC404E60B6E /* Logger.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C17D50479BEDC815E3D91CCC /* Logger.cpp */; settings = {ATTRIBUTES = (); }; };
+		DA099A481192CDBDD85EFC04 /* APIBinderDefault.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 345BEC83895F9EC8ED9B5390 /* APIBinderDefault.cpp */; settings = {ATTRIBUTES = (); }; };
+		E8B30A409951494D595EDE4D /* SignalingModuleIAX2.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EACE608B66BCCF61A7255220 /* SignalingModuleIAX2.cpp */; settings = {ATTRIBUTES = (); }; };
+		E9AA039C629FBC39DF57FBCC /* ConfigurationModuleImpl.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A7C49D734E714793DC2E30A7 /* ConfigurationModuleImpl.cpp */; settings = {ATTRIBUTES = (); }; };
+		F542FB50C18EE079FC0CEB83 /* AbstractModule.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F978732BA6E358A4A4DCD485 /* AbstractModule.cpp */; settings = {ATTRIBUTES = (); }; };
+		F7B9E6B393DE89BADF5EF9EC /* Configuration.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C7840E825F2816478A72F2E8 /* Configuration.cpp */; settings = {ATTRIBUTES = (); }; };
+		F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/emilstoyanov/developer/kiax/trunk/kiax2core;
+			dstSubfolderSpec = 0;
+			files = (
+				7725F5180E87D3B50039046E /* libkiax2core.dylib in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CF8E2221C6FB60794CA4D04 /* kiax2core.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = kiax2core.pro; sourceTree = "<group>"; };
+		138647EE1460BBCE70840B71 /* CDR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDR.h; sourceTree = "<group>"; };
+		16610126D80FC413D0669515 /* PConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PConstants.h; sourceTree = "<group>"; };
+		176D691162E191C7E991740E /* SignalingModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalingModule.h; sourceTree = "<group>"; };
+		18B4E17AC74CA029D45B86FF /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		21B7C4A64A735FA52AB5427A /* CDRModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRModule.h; sourceTree = "<group>"; };
+		25937524E69C2DFE9A9C3C9F /* APIBinder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = APIBinder.cpp; sourceTree = "<group>"; };
+		27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		28537ECF3D595217F36783DF /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		3036E8C3FB84F3B670FBACEB /* CDR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDR.cpp; sourceTree = "<group>"; };
+		345BEC83895F9EC8ED9B5390 /* APIBinderDefault.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = APIBinderDefault.cpp; sourceTree = "<group>"; };
+		348BC1A7952003A77D9E6034 /* StorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageService.h; sourceTree = "<group>"; };
+		35367D82AD5BF9ADC6F48B03 /* AccountsAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountsAPI.h; sourceTree = "<group>"; };
+		3CFAD8BEFB44C041E1002771 /* ContactsModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsModuleImpl.h; sourceTree = "<group>"; };
+		3D1E0AC785C4795981A36E13 /* CDRModuleImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDRModuleImpl.cpp; sourceTree = "<group>"; };
+		3F196B0D727D3EA73E2E0FF0 /* IAX2CallbackHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAX2CallbackHandler.h; sourceTree = "<group>"; };
+		4448D93438AE6E452DA15AE7 /* Contact.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Contact.cpp; sourceTree = "<group>"; };
+		472E3501962E5B6A6AB32421 /* NamingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NamingService.h; sourceTree = "<group>"; };
+		48D41540E61F78D3F4C6693D /* Serializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Serializable.h; sourceTree = "<group>"; };
+		49D09B2EF9C6E154D542F00D /* SignalingModuleIAX2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalingModuleIAX2.h; sourceTree = "<group>"; };
+		4D630841F36FB1AA135BE7E1 /* ConfigurationParameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigurationParameter.cpp; sourceTree = "<group>"; };
+		508AD0D3927166166ACAF1FF /* libiaxclient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiaxclient.dylib; path = "libs-macx/libiaxclient.dylib"; sourceTree = "<group>"; };
+		518F0D2C4D09625E77F5B8A4 /* ContactsAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsAPI.h; sourceTree = "<group>"; };
+		532C2447A0163601A9D0B12A /* AccountsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountsModule.h; sourceTree = "<group>"; };
+		58F18AA246AF7F8318284B28 /* Serializable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Serializable.cpp; sourceTree = "<group>"; };
+		5932418EA27951429F02D302 /* AbstractService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractService.cpp; sourceTree = "<group>"; };
+		60D343E81342588B39951390 /* NamingService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NamingService.cpp; sourceTree = "<group>"; };
+		6582624EAF1A0DFC7A3E95E4 /* APIBinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIBinder.h; sourceTree = "<group>"; };
+		67C94AA6D8DCCBE74797597A /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		7175B7F94529FBD6BB804A24 /* ContactsModuleImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContactsModuleImpl.cpp; sourceTree = "<group>"; };
+		74AC90F0AD1FC3DF3C4C1F33 /* Core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Core.cpp; sourceTree = "<group>"; };
+		7725F5160E87D3B50039046E /* libkiax2core.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libkiax2core.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		7BE10B5A9D0871441AA51A22 /* ConfigurationParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurationParameter.h; sourceTree = "<group>"; };
+		7FCF44565E4BA586222C59CD /* ConfigurationAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurationAPI.h; sourceTree = "<group>"; };
+		821416211D63F190AAAD016A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		85664BAB737AC7866486BE41 /* AccountsModuleImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AccountsModuleImpl.cpp; sourceTree = "<group>"; };
+		942F313F4CA29B8CA94E9C3B /* CDRModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRModuleImpl.h; sourceTree = "<group>"; };
+		9A6FAE670447DBE17840EEFC /* StorageAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageAPI.h; sourceTree = "<group>"; };
+		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		A420AC1766C66260CA44215D /* SignalingCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalingCallback.h; sourceTree = "<group>"; };
+		A555F25192CAD02887CCDCD3 /* AbstractModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractModule.h; sourceTree = "<group>"; };
+		A7C49D734E714793DC2E30A7 /* ConfigurationModuleImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigurationModuleImpl.cpp; sourceTree = "<group>"; };
+		AA863C406B5327345623EDC4 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		B1E40F0CE95F0F1B07BD7251 /* AccountsModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountsModuleImpl.h; sourceTree = "<group>"; };
+		B5447AC78FD0EF1080B749D3 /* Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		BBF6090B965F7345B1B1B65D /* APIBinderDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIBinderDefault.h; sourceTree = "<group>"; };
+		BC9EF26EA22BCD4567983852 /* StorageService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StorageService.cpp; sourceTree = "<group>"; };
+		C17D50479BEDC815E3D91CCC /* Logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		C7840E825F2816478A72F2E8 /* Configuration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Configuration.cpp; sourceTree = "<group>"; };
+		C9893BCC24F799098C04BF6B /* CDRAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRAPI.h; sourceTree = "<group>"; };
+		CD68657EB72FC1EDC9A022D8 /* ConfigurationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurationModule.h; sourceTree = "<group>"; };
+		DA138F75C9F545CDAE7FB264 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		DADD34BC4FB27CCBD4B28307 /* ContactsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsModule.h; sourceTree = "<group>"; };
+		DC90DD18F87A67CBF0EE93F2 /* PConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PConfiguration.h; sourceTree = "<group>"; };
+		E242A6A0874C32569A2AC356 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = "libs-macx/libsqlite3.dylib"; sourceTree = "<group>"; };
+		EACE608B66BCCF61A7255220 /* SignalingModuleIAX2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SignalingModuleIAX2.cpp; sourceTree = "<group>"; };
+		F4CF308678FE8ED577B140DB /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		F795F401B40C5FBDE6832F18 /* AbstractService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractService.h; sourceTree = "<group>"; };
+		F96F764CBC3B5F56F337E856 /* ConfigurationModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurationModuleImpl.h; sourceTree = "<group>"; };
+		F978732BA6E358A4A4DCD485 /* AbstractModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractModule.cpp; sourceTree = "<group>"; };
+		FE73804D5EB5F6F88586526A /* SignalingAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalingAPI.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB80FFB90433DD3DC4F9B3 /* libiaxclient.dylib in Frameworks & Libraries */,
+				6B20A701B7AB86E27C8E1D09 /* libsqlite3.dylib in Frameworks & Libraries */,
+				501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */,
+				C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */,
+				51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */,
+				069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */,
+				F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* kiax2core */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				7725F5170E87D3B50039046E /* Products */,
+			);
+			name = kiax2core;
+			sourceTree = "<group>";
+		};
+		7725F5170E87D3B50039046E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7725F5160E87D3B50039046E /* libkiax2core.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				0CF8E2221C6FB60794CA4D04 /* kiax2core.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6582624EAF1A0DFC7A3E95E4 /* APIBinder.h */,
+				138647EE1460BBCE70840B71 /* CDR.h */,
+				DADD34BC4FB27CCBD4B28307 /* ContactsModule.h */,
+				FE73804D5EB5F6F88586526A /* SignalingAPI.h */,
+				BBF6090B965F7345B1B1B65D /* APIBinderDefault.h */,
+				C9893BCC24F799098C04BF6B /* CDRAPI.h */,
+				3CFAD8BEFB44C041E1002771 /* ContactsModuleImpl.h */,
+				A420AC1766C66260CA44215D /* SignalingCallback.h */,
+				A555F25192CAD02887CCDCD3 /* AbstractModule.h */,
+				21B7C4A64A735FA52AB5427A /* CDRModule.h */,
+				28537ECF3D595217F36783DF /* Core.h */,
+				176D691162E191C7E991740E /* SignalingModule.h */,
+				F795F401B40C5FBDE6832F18 /* AbstractService.h */,
+				942F313F4CA29B8CA94E9C3B /* CDRModuleImpl.h */,
+				AA863C406B5327345623EDC4 /* Logger.h */,
+				49D09B2EF9C6E154D542F00D /* SignalingModuleIAX2.h */,
+				18B4E17AC74CA029D45B86FF /* Account.h */,
+				B5447AC78FD0EF1080B749D3 /* Configuration.h */,
+				472E3501962E5B6A6AB32421 /* NamingService.h */,
+				9A6FAE670447DBE17840EEFC /* StorageAPI.h */,
+				35367D82AD5BF9ADC6F48B03 /* AccountsAPI.h */,
+				7BE10B5A9D0871441AA51A22 /* ConfigurationParameter.h */,
+				DC90DD18F87A67CBF0EE93F2 /* PConfiguration.h */,
+				348BC1A7952003A77D9E6034 /* StorageService.h */,
+				532C2447A0163601A9D0B12A /* AccountsModule.h */,
+				F4CF308678FE8ED577B140DB /* Contact.h */,
+				16610126D80FC413D0669515 /* PConstants.h */,
+				B1E40F0CE95F0F1B07BD7251 /* AccountsModuleImpl.h */,
+				518F0D2C4D09625E77F5B8A4 /* ContactsAPI.h */,
+				48D41540E61F78D3F4C6693D /* Serializable.h */,
+				3F196B0D727D3EA73E2E0FF0 /* IAX2CallbackHandler.h */,
+				7FCF44565E4BA586222C59CD /* ConfigurationAPI.h */,
+				CD68657EB72FC1EDC9A022D8 /* ConfigurationModule.h */,
+				F96F764CBC3B5F56F337E856 /* ConfigurationModuleImpl.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				508AD0D3927166166ACAF1FF /* libiaxclient.dylib */,
+				E242A6A0874C32569A2AC356 /* libsqlite3.dylib */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				DA138F75C9F545CDAE7FB264 /* Carbon.framework */,
+				821416211D63F190AAAD016A /* AppKit.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+				27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				25937524E69C2DFE9A9C3C9F /* APIBinder.cpp */,
+				85664BAB737AC7866486BE41 /* AccountsModuleImpl.cpp */,
+				4448D93438AE6E452DA15AE7 /* Contact.cpp */,
+				58F18AA246AF7F8318284B28 /* Serializable.cpp */,
+				345BEC83895F9EC8ED9B5390 /* APIBinderDefault.cpp */,
+				3036E8C3FB84F3B670FBACEB /* CDR.cpp */,
+				7175B7F94529FBD6BB804A24 /* ContactsModuleImpl.cpp */,
+				EACE608B66BCCF61A7255220 /* SignalingModuleIAX2.cpp */,
+				F978732BA6E358A4A4DCD485 /* AbstractModule.cpp */,
+				3D1E0AC785C4795981A36E13 /* CDRModuleImpl.cpp */,
+				74AC90F0AD1FC3DF3C4C1F33 /* Core.cpp */,
+				BC9EF26EA22BCD4567983852 /* StorageService.cpp */,
+				5932418EA27951429F02D302 /* AbstractService.cpp */,
+				C7840E825F2816478A72F2E8 /* Configuration.cpp */,
+				C17D50479BEDC815E3D91CCC /* Logger.cpp */,
+				67C94AA6D8DCCBE74797597A /* Account.cpp */,
+				4D630841F36FB1AA135BE7E1 /* ConfigurationParameter.cpp */,
+				60D343E81342588B39951390 /* NamingService.cpp */,
+				A7C49D734E714793DC2E30A7 /* ConfigurationModuleImpl.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A02F92EC1F6B7401C44D789 /* libkiax2core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7725F52E0E87D3D50039046E /* Build configuration list for PBXNativeTarget "libkiax2core" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libkiax2core;
+			productName = libkiax2core;
+			productReference = 7725F5160E87D3B50039046E /* libkiax2core.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "kiax2core" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* kiax2core */;
+			productRefGroup = 7725F5170E87D3B50039046E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A02F92EC1F6B7401C44D789 /* libkiax2core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/emilstoyanov/developer/kiax/trunk/kiax2core -f kiax2core.xcodeproj/qt_preprocess.mak";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/emilstoyanov/developer/kiax/trunk/kiax2core -f kiax2core.xcodeproj/qt_makeqmake.mak";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487D56C77A49B506F7C776AC /* APIBinder.cpp in Build Sources */,
+				618CD5C2F9FB54EC2D6CC157 /* AccountsModuleImpl.cpp in Build Sources */,
+				A0376D2C4E9E31BDA98424FF /* Contact.cpp in Build Sources */,
+				88117C1CD3BD413F591F55C4 /* Serializable.cpp in Build Sources */,
+				DA099A481192CDBDD85EFC04 /* APIBinderDefault.cpp in Build Sources */,
+				35F46FBE47DB65308B8DB678 /* CDR.cpp in Build Sources */,
+				055B426B36459E702F8B98A2 /* ContactsModuleImpl.cpp in Build Sources */,
+				E8B30A409951494D595EDE4D /* SignalingModuleIAX2.cpp in Build Sources */,
+				F542FB50C18EE079FC0CEB83 /* AbstractModule.cpp in Build Sources */,
+				38621A04E2F637E54251A5A8 /* CDRModuleImpl.cpp in Build Sources */,
+				939E184D0F1D9CF6C74056A6 /* Core.cpp in Build Sources */,
+				B9A53761B6D39157E45F5E67 /* StorageService.cpp in Build Sources */,
+				0E39F9CBFED69F8F8E8AFD89 /* AbstractService.cpp in Build Sources */,
+				F7B9E6B393DE89BADF5EF9EC /* Configuration.cpp in Build Sources */,
+				CB9CB97329F18BC404E60B6E /* Logger.cpp in Build Sources */,
+				00FAF11E5216C035C01B54FF /* Account.cpp in Build Sources */,
+				9D0FB796847F70A18817AAC0 /* ConfigurationParameter.cpp in Build Sources */,
+				9C4116E6FDC20FC8B8AF6619 /* NamingService.cpp in Build Sources */,
+				E9AA039C629FBC39DF57FBCC /* ConfigurationModuleImpl.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7725F5270E87D3B70039046E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/emilstoyanov/developer/kiax/trunk/kiax2core;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					includes,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.4/mkspecs/macx-xcode",
+				);
+				INSTALL_PATH = "";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/libkiax2core.dylib";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/Users/emilstoyanov/developer/kiax/trunk/kiax2core/libs-macx",
+					/System/Library/Frameworks/,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-single_module",
+					"-dynamiclib",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libkiax2core;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		7725F5280E87D3B70039046E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/emilstoyanov/developer/kiax/trunk/kiax2core;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					includes,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.4/mkspecs/macx-xcode",
+				);
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/Users/emilstoyanov/developer/kiax/trunk/kiax2core/libs-macx",
+					/System/Library/Frameworks/,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-single_module",
+					"-dynamiclib",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libkiax2core;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		7725F5290E87D3B70039046E /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/emilstoyanov/developer/kiax/trunk/kiax2core;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					includes,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.4/mkspecs/macx-xcode",
+				);
+				INSTALL_PATH = "";
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/Users/emilstoyanov/developer/kiax/trunk/kiax2core/libs-macx",
+					/System/Library/Frameworks/,
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DMACXDEP",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-single_module",
+					"-dynamiclib",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = libkiax2core;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "kiax2core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7725F52E0E87D3D50039046E /* Build configuration list for PBXNativeTarget "libkiax2core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7725F5270E87D3B70039046E /* Debug */,
+				7725F5280E87D3B70039046E /* Release */,
+				7725F5290E87D3B70039046E /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

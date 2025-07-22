@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	0A98CEBF3BAB883969FE5721 /* Kiax2Application.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 536}}";
+			sepNavSelRange = "{377, 0}";
+			sepNavVisRange = "{0, 431}";
+			sepNavWindowFrame = "{{68, 78}, {895, 664}}";
+		};
+	};
+	0FB7DB341506922E48C69F7A /* IAX2CallbackHandlerQt.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 560}}";
+			sepNavSelRange = "{228, 0}";
+			sepNavVisRange = "{0, 925}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	18FD04ABB3DA858A1145629D /* Kiax2LoginScreen.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {821, 574}}";
+			sepNavSelRange = "{0, 56}";
+			sepNavVisRange = "{0, 574}";
+			sepNavWindowFrame = "{{15, 79}, {880, 662}}";
+		};
+	};
+	3A62CFFB525B5409CC5E3BC8 /* Kiax2CallDialog.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 1232}}";
+			sepNavSelRange = "{769, 0}";
+			sepNavVisRange = "{196, 1069}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	41CCC90FB26766B325CDFF58 /* Kiax2ContactDialog.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 536}}";
+			sepNavSelRange = "{111, 0}";
+			sepNavVisRange = "{0, 866}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	56AA2E7D92ADAA1808006B2A /* Kiax2SettingsDialog.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {672, 3682}}";
+			sepNavSelRange = "{234, 60}";
+			sepNavVisRange = "{141, 398}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	7100A73B3D3054B2F6AFF8DE /* Kiax2JSONBalance.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {902, 3276}}";
+			sepNavSelRange = "{4839, 0}";
+			sepNavVisRange = "{4372, 803}";
+			sepNavWindowFrame = "{{15, 79}, {880, 662}}";
+		};
+	};
+	772AD7F10DEC5B320052629A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	772AD7F20DEC5B320052629A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	777588F30EBF058E000E596A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'class Ui::SettingsDialog' has no member named 'routingComboBox'";
+		fRef = 56AA2E7D92ADAA1808006B2A /* Kiax2SettingsDialog.cpp */;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	777588F40EBF058E000E596A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56AA2E7D92ADAA1808006B2A /* Kiax2SettingsDialog.cpp */;
+		name = "Kiax2SettingsDialog.cpp: 12";
+		rLen = 60;
+		rLoc = 234;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 141;
+	};
+	777588F80EBF05C2000E596A /* Kiax */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Kiax;
+		sourceDirectories = (
+		);
+	};
+	777589180EBF068F000E596A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'HTTP_API_PORT' was not declared in this scope";
+		fRef = CBAAB056B24DA40E1B8300BF /* Kiax2DispatcherServer.cpp */;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	777589190EBF068F000E596A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CBAAB056B24DA40E1B8300BF /* Kiax2DispatcherServer.cpp */;
+		name = "Kiax2DispatcherServer.cpp: 15";
+		rLen = 64;
+		rLoc = 400;
+		rType = 0;
+		vrLen = 569;
+		vrLoc = 160;
+	};
+	77F210F40DF68600006C2E3A /* Kiax */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = "Executable Runner";
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Kiax;
+		sourceDirectories = (
+		);
+	};
+	91B15E841AA80083484172DE /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 77F210F40DF68600006C2E3A /* Kiax */;
+		activeTarget = BEB2A219A7DB7725196C8AC7 /* Kiax */;
+		addToTargets = (
+		);
+		codeSenseManager = 772AD7F20DEC5B320052629A /* Code sense */;
+		executables = (
+			77F210F40DF68600006C2E3A /* Kiax */,
+			777588F80EBF05C2000E596A /* Kiax */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					198,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					278,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					276,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					388,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					402,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					328,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					364,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					348,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 247399874;
+			PBXWorkspaceStateSaveDate = 247399874;
+		};
+		perUserProjectItems = {
+			777588F30EBF058E000E596A = 777588F30EBF058E000E596A /* PBXTextBookmark */;
+			777588F40EBF058E000E596A = 777588F40EBF058E000E596A /* PBXTextBookmark */;
+			777589180EBF068F000E596A /* PBXTextBookmark */ = 777589180EBF068F000E596A /* PBXTextBookmark */;
+			777589190EBF068F000E596A /* PBXTextBookmark */ = 777589190EBF068F000E596A /* PBXTextBookmark */;
+		};
+		sourceControlManager = 772AD7F10DEC5B320052629A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	9C1427A2565ED5423929204B /* Kiax2Application.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 756}}";
+			sepNavSelRange = "{277, 0}";
+			sepNavVisRange = "{0, 765}";
+			sepNavWindowFrame = "{{121, 40}, {895, 664}}";
+		};
+	};
+	B50F7D443D1D7886449B217E /* gui.pro */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1106, 1442}}";
+			sepNavSelRange = "{890, 0}";
+			sepNavVisRange = "{228, 1056}";
+			sepNavWindowFrame = "{{35, 64}, {895, 664}}";
+		};
+	};
+	BEB2A219A7DB7725196C8AC7 /* Kiax */ = {
+		activeExec = 0;
+		executables = (
+			777588F80EBF05C2000E596A /* Kiax */,
+		);
+	};
+	BEB9B9F1B00E293410E4D478 /* Kiax2AboutDialog.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 536}}";
+			sepNavSelRange = "{214, 0}";
+			sepNavVisRange = "{0, 420}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	BFC5B8DFEF06C345FA27BB17 /* Kiax2MainWindow.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 3066}}";
+			sepNavSelRange = "{5092, 0}";
+			sepNavVisRange = "{3880, 1377}";
+			sepNavWindowFrame = "{{58, 57}, {895, 664}}";
+		};
+	};
+	C603A0BFEE21A2F84CBCFACB /* IAX2CallbackHandlerQt.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 2758}}";
+			sepNavSelRange = "{2658, 0}";
+			sepNavVisRange = "{2304, 1033}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	CBAAB056B24DA40E1B8300BF /* Kiax2DispatcherServer.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {672, 1218}}";
+			sepNavSelRange = "{400, 64}";
+			sepNavVisRange = "{160, 569}";
+		};
+	};
+	CDFF64C4B6B89993948A2FF4 /* Kiax2JSONUsersOnline.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {821, 1820}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2345, 1118}";
+			sepNavWindowFrame = "{{15, 79}, {880, 662}}";
+		};
+	};
+	D333730A49FB9C13B3CC065C /* Kiax2CallDialog.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 6034}}";
+			sepNavSelRange = "{2536, 0}";
+			sepNavVisRange = "{0, 1598}";
+			sepNavWindowFrame = "{{96, 50}, {896, 664}}";
+		};
+	};
+	DB9A92842D56ED7E911ED0D5 /* Kiax2MainWindow.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1136, 27832}}";
+			sepNavSelRange = "{10139, 0}";
+			sepNavVisRange = "{9850, 1952}";
+			sepNavWindowFrame = "{{80, 72}, {895, 664}}";
+		};
+	};
+	E2EA383D4AF11A26ED60391F /* Kiax2ContactListItemWidget.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {821, 534}}";
+			sepNavSelRange = "{0, 305}";
+			sepNavVisRange = "{0, 305}";
+			sepNavWindowFrame = "{{15, 79}, {880, 662}}";
+		};
+	};
+	EE7774652663964D961C371D /* Kiax2AccountDialog.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 784}}";
+			sepNavSelRange = "{183, 58}";
+			sepNavVisRange = "{0, 968}";
+			sepNavWindowFrame = "{{38, 56}, {895, 664}}";
+		};
+	};
+}

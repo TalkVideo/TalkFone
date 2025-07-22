@@ -1,0 +1,1588 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>232</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Softphone</string>
+  </property>
+  <property name="styleSheet" >
+   <string notr="true" />
+  </property>
+  <property name="iconSize" >
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac" >
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <property name="styleSheet" >
+    <string notr="true" />
+   </property>
+   <layout class="QGridLayout" name="mainLayout" >
+    <property name="margin" >
+     <number>0</number>
+    </property>
+    <property name="spacing" >
+     <number>0</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="QFrame" name="mainWidgetFrame" >
+      <property name="styleSheet" >
+       <string notr="true" >QFrame {
+background-color: white;
+}</string>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="mainWidgetLayout" >
+       <property name="margin" >
+        <number>3</number>
+       </property>
+       <property name="spacing" >
+        <number>0</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTabWidget" name="tabWidget" >
+         <property name="cursor" >
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="mouseTracking" >
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet" >
+          <string notr="true" >QTabWidget {background-color:white}</string>
+         </property>
+         <property name="tabShape" >
+          <enum>QTabWidget::Rounded</enum>
+         </property>
+         <property name="currentIndex" >
+          <number>0</number>
+         </property>
+         <property name="elideMode" >
+          <enum>Qt::ElideNone</enum>
+         </property>
+         <widget class="QWidget" name="dialtab" >
+          <attribute name="title" >
+           <string>Dialpad</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout" >
+           <item row="0" column="0" >
+            <widget class="QFrame" name="bodyFrame" >
+             <property name="enabled" >
+              <bool>true</bool>
+             </property>
+             <property name="frameShape" >
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow" >
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth" >
+              <number>-1</number>
+             </property>
+             <property name="midLineWidth" >
+              <number>-1</number>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_8" >
+              <property name="horizontalSpacing" >
+               <number>0</number>
+              </property>
+              <property name="margin" >
+               <number>0</number>
+              </property>
+              <item row="0" column="0" >
+               <widget class="QFrame" name="dialpadFrame" >
+                <property name="autoFillBackground" >
+                 <bool>false</bool>
+                </property>
+                <property name="frameShape" >
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow" >
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <property name="lineWidth" >
+                 <number>1</number>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2" >
+                 <property name="leftMargin" >
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin" >
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin" >
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0" colspan="3" >
+                  <spacer name="verticalSpacer_3" >
+                   <property name="orientation" >
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0" >
+                    <size>
+                     <width>202</width>
+                     <height>4</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="0" colspan="3" >
+                  <widget class="QFrame" name="callsFrame" >
+                   <property name="minimumSize" >
+                    <size>
+                     <width>180</width>
+                     <height>55</height>
+                    </size>
+                   </property>
+                   <property name="frameShape" >
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow" >
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout" >
+                    <property name="spacing" >
+                     <number>3</number>
+                    </property>
+                    <property name="margin" >
+                     <number>0</number>
+                    </property>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" >
+                  <spacer name="horizontalSpacer" >
+                   <property name="orientation" >
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0" >
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="2" column="1" >
+                  <widget class="QLineEdit" name="numberEdit" >
+                   <property name="sizePolicy" >
+                    <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize" >
+                    <size>
+                     <width>140</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize" >
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="palette" >
+                    <palette>
+                     <active>
+                      <colorrole role="Text" >
+                       <brush brushstyle="SolidPattern" >
+                        <color alpha="255" >
+                         <red>153</red>
+                         <green>149</green>
+                         <blue>154</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Base" >
+                       <brush brushstyle="SolidPattern" >
+                        <color alpha="255" >
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </active>
+                     <inactive>
+                      <colorrole role="Text" >
+                       <brush brushstyle="SolidPattern" >
+                        <color alpha="255" >
+                         <red>153</red>
+                         <green>149</green>
+                         <blue>154</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Base" >
+                       <brush brushstyle="SolidPattern" >
+                        <color alpha="255" >
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </inactive>
+                     <disabled>
+                      <colorrole role="Text" >
+                       <brush brushstyle="SolidPattern" >
+                        <color alpha="255" >
+                         <red>120</red>
+                         <green>120</green>
+                         <blue>120</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                      <colorrole role="Base" >
+                       <brush brushstyle="SolidPattern" >
+                        <color alpha="255" >
+                         <red>255</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </brush>
+                      </colorrole>
+                     </disabled>
+                    </palette>
+                   </property>
+                   <property name="text" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2" >
+                  <spacer name="horizontalSpacer_2" >
+                   <property name="orientation" >
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0" >
+                    <size>
+                     <width>0</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="3" column="0" colspan="3" >
+                  <widget class="QPushButton" name="dialpadButton" >
+                   <property name="sizePolicy" >
+                    <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text" >
+                    <string>Dial Pad</string>
+                   </property>
+                   <property name="checkable" >
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="3" >
+                  <widget class="QFrame" name="dtmfButtonsFrame" >
+                   <property name="sizePolicy" >
+                    <sizepolicy vsizetype="Minimum" hsizetype="Preferred" >
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize" >
+                    <size>
+                     <width>0</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="frameShape" >
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow" >
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_5" >
+                    <property name="margin" >
+                     <number>0</number>
+                    </property>
+                    <property name="spacing" >
+                     <number>0</number>
+                    </property>
+                    <item row="0" column="0" >
+                     <widget class="QFrame" name="frame" >
+                      <property name="sizePolicy" >
+                       <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize" >
+                       <size>
+                        <width>0</width>
+                        <height>180</height>
+                       </size>
+                      </property>
+                      <property name="frameShape" >
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow" >
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_4" >
+                       <property name="spacing" >
+                        <number>3</number>
+                       </property>
+                       <item row="0" column="0" >
+                        <widget class="QPushButton" name="dtmf1Button" >
+                         <property name="sizePolicy" >
+                          <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string comment="sdf" />
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_1.png</normaloff>icons/dialer/sky_1.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="2" >
+                        <widget class="QPushButton" name="dtmf3Button" >
+                         <property name="sizePolicy" >
+                          <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_3.png</normaloff>icons/dialer/sky_3.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0" >
+                        <widget class="QPushButton" name="dtmf4Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_4.png</normaloff>icons/dialer/sky_4.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1" >
+                        <widget class="QPushButton" name="dtmf5Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_5.png</normaloff>icons/dialer/sky_5.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2" >
+                        <widget class="QPushButton" name="dtmf6Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_6.png</normaloff>icons/dialer/sky_6.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0" >
+                        <widget class="QPushButton" name="dtmf7Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_7.png</normaloff>icons/dialer/sky_7.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2" >
+                        <widget class="QPushButton" name="dtmf9Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_9.png</normaloff>icons/dialer/sky_9.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1" >
+                        <widget class="QPushButton" name="dtmf0Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_0.png</normaloff>icons/dialer/sky_0.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2" >
+                        <widget class="QPushButton" name="dtmfHashButton" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_cuadrado.png</normaloff>icons/dialer/sky_cuadrado.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1" >
+                        <widget class="QPushButton" name="dtmf8Button" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_8.png</normaloff>icons/dialer/sky_8.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0" >
+                        <widget class="QPushButton" name="dtmfStarButton" >
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_aste.png</normaloff>icons/dialer/sky_aste.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1" >
+                        <widget class="QPushButton" name="dtmf2Button" >
+                         <property name="sizePolicy" >
+                          <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="cursor" >
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="mouseTracking" >
+                          <bool>true</bool>
+                         </property>
+                         <property name="autoFillBackground" >
+                          <bool>false</bool>
+                         </property>
+                         <property name="text" >
+                          <string/>
+                         </property>
+                         <property name="icon" >
+                          <iconset>
+                           <normaloff>icons/dialer/sky_2.png</normaloff>icons/dialer/sky_2.png</iconset>
+                         </property>
+                         <property name="iconSize" >
+                          <size>
+                           <width>44</width>
+                           <height>44</height>
+                          </size>
+                         </property>
+                         <property name="flat" >
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0" >
+            <spacer name="verticalSpacer_2" >
+             <property name="orientation" >
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0" >
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="contacts" >
+          <attribute name="title" >
+           <string>Contacts</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_9" >
+           <item row="0" column="0" >
+            <widget class="QFrame" name="searchFrame" >
+             <property name="frameShape" >
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow" >
+              <enum>QFrame::Raised</enum>
+             </property>
+             <property name="lineWidth" >
+              <number>0</number>
+             </property>
+             <layout class="QGridLayout" name="_2" >
+              <property name="horizontalSpacing" >
+               <number>5</number>
+              </property>
+              <property name="margin" >
+               <number>0</number>
+              </property>
+              <item row="0" column="0" >
+               <widget class="QComboBox" name="searchComboBox" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="palette" >
+                 <palette>
+                  <active>
+                   <colorrole role="Text" >
+                    <brush brushstyle="SolidPattern" >
+                     <color alpha="255" >
+                      <red>133</red>
+                      <green>134</green>
+                      <blue>140</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Base" >
+                    <brush brushstyle="SolidPattern" >
+                     <color alpha="255" >
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </active>
+                  <inactive>
+                   <colorrole role="Text" >
+                    <brush brushstyle="SolidPattern" >
+                     <color alpha="255" >
+                      <red>133</red>
+                      <green>134</green>
+                      <blue>140</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Base" >
+                    <brush brushstyle="SolidPattern" >
+                     <color alpha="255" >
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </inactive>
+                  <disabled>
+                   <colorrole role="Text" >
+                    <brush brushstyle="SolidPattern" >
+                     <color alpha="255" >
+                      <red>120</red>
+                      <green>120</green>
+                      <blue>120</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Base" >
+                    <brush brushstyle="SolidPattern" >
+                     <color alpha="255" >
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </disabled>
+                 </palette>
+                </property>
+                <property name="editable" >
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" >
+               <widget class="QPushButton" name="listSwitchButton" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="toolTip" >
+                 <string>Click to view call history</string>
+                </property>
+                <property name="text" >
+                 <string/>
+                </property>
+                <property name="icon" >
+                 <iconset>
+                  <normaloff>icons/calls.png</normaloff>icons/calls.png</iconset>
+                </property>
+                <property name="checkable" >
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0" >
+            <widget class="QListWidget" name="contactsList" />
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="history" >
+          <attribute name="title" >
+           <string>History</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_10" >
+           <item row="0" column="0" >
+            <widget class="QComboBox" name="cdrSearchComboBox" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="palette" >
+              <palette>
+               <active>
+                <colorrole role="Text" >
+                 <brush brushstyle="SolidPattern" >
+                  <color alpha="255" >
+                   <red>133</red>
+                   <green>134</green>
+                   <blue>140</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base" >
+                 <brush brushstyle="SolidPattern" >
+                  <color alpha="255" >
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Text" >
+                 <brush brushstyle="SolidPattern" >
+                  <color alpha="255" >
+                   <red>133</red>
+                   <green>134</green>
+                   <blue>140</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base" >
+                 <brush brushstyle="SolidPattern" >
+                  <color alpha="255" >
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Text" >
+                 <brush brushstyle="SolidPattern" >
+                  <color alpha="255" >
+                   <red>120</red>
+                   <green>120</green>
+                   <blue>120</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base" >
+                 <brush brushstyle="SolidPattern" >
+                  <color alpha="255" >
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="editable" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" >
+            <widget class="QListWidget" name="cdrList" >
+             <property name="autoFillBackground" >
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet" >
+              <string notr="true" />
+             </property>
+             <property name="frameShape" >
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="lineWidth" >
+              <number>1</number>
+             </property>
+             <property name="verticalScrollBarPolicy" >
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy" >
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="dragEnabled" >
+              <bool>true</bool>
+             </property>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+             <item>
+              <property name="text" >
+               <string>New Item</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QFrame" name="dialPadButtonsFrame" >
+         <property name="styleSheet" >
+          <string notr="true" >QFrame {
+background: url(./icons/dialer/fondo.png);
+}
+</string>
+         </property>
+         <property name="frameShape" >
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Plain</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3" >
+          <item row="0" column="1" >
+           <widget class="QPushButton" name="hangupButton" >
+            <property name="minimumSize" >
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="icon" >
+             <iconset>
+              <normaloff>icons/dialer/boton_colgar_on.png</normaloff>icons/dialer/boton_colgar_on.png</iconset>
+            </property>
+            <property name="iconSize" >
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="flat" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" >
+           <widget class="QPushButton" name="dialButton" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="icon" >
+             <iconset>
+              <normaloff>icons/dialer/boton_llamar_on.png</normaloff>icons/dialer/boton_llamar_on.png</iconset>
+            </property>
+            <property name="iconSize" >
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="flat" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2" >
+           <widget class="QFrame" name="onlineStatusFrame" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet" >
+             <string notr="true" >background:transparent;
+</string>
+            </property>
+            <property name="frameShape" >
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="lineWidth" >
+             <number>0</number>
+            </property>
+            <layout class="QGridLayout" name="statusLayout" >
+             <property name="margin" >
+              <number>0</number>
+             </property>
+             <property name="spacing" >
+              <number>0</number>
+             </property>
+             <item row="0" column="0" >
+              <widget class="QPushButton" name="statusButton" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize" >
+                <size>
+                 <width>120</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font" >
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="mouseTracking" >
+                <bool>true</bool>
+               </property>
+               <property name="contextMenuPolicy" >
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="layoutDirection" >
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text" >
+                <string/>
+               </property>
+               <property name="icon" >
+                <iconset>
+                 <normaloff>icons/disconnected.png</normaloff>icons/disconnected.png</iconset>
+               </property>
+               <property name="flat" >
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" >
+              <widget class="QPushButton" name="balanceLabel" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize" >
+                <size>
+                 <width>130</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font" >
+                <font>
+                 <pointsize>10</pointsize>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="toolTip" >
+                <string>Click here to buy credits or update your profile</string>
+               </property>
+               <property name="layoutDirection" >
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text" >
+                <string>Balance:</string>
+               </property>
+               <property name="flat" >
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>232</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuService" >
+    <property name="title" >
+     <string>MIXvoip</string>
+    </property>
+    <widget class="QMenu" name="menuAccount" >
+     <property name="title" >
+      <string>Account</string>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>icons/accountmenu.png</normaloff>icons/accountmenu.png</iconset>
+     </property>
+    </widget>
+    <addaction name="menuAccount" />
+    <addaction name="separator" />
+    <addaction name="actionConnect" />
+    <addaction name="actionDisconnect" />
+    <addaction name="separator" />
+    <addaction name="actionSettings" />
+    <addaction name="separator" />
+    <addaction name="actionExit" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuContacts" >
+    <property name="title" >
+     <string>Contacts</string>
+    </property>
+    <addaction name="actionAdd_Contact" />
+   </widget>
+   <addaction name="menuService" />
+   <addaction name="menuContacts" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QToolBar" name="toolBar" >
+   <property name="windowTitle" >
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnect" />
+   <addaction name="actionDisconnect" />
+   <addaction name="actionAdd_Contact" />
+  </widget>
+  <action name="actionAbout" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/about.png</normaloff>icons/about.png</iconset>
+   </property>
+   <property name="text" >
+    <string>About</string>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionConnect" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/bconnect.png</normaloff>icons/bconnect.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Connect</string>
+   </property>
+   <property name="iconText" >
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="actionDisconnect" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/bdisconnect.png</normaloff>icons/bdisconnect.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Disconnect</string>
+   </property>
+  </action>
+  <action name="actionExit" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/exit.png</normaloff>icons/exit.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAdd_Contact" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/addcontact.png</normaloff>icons/addcontact.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Add Contact</string>
+   </property>
+  </action>
+  <action name="actionInvite_Friend" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/invite.png</normaloff>icons/invite.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Invite Friend</string>
+   </property>
+  </action>
+  <action name="actionEdit_Contact" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/contact.png</normaloff>icons/contact.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Edit Contact</string>
+   </property>
+  </action>
+  <action name="actionDelete_Contact" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/deletecontact.png</normaloff>icons/deletecontact.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Delete Contact</string>
+   </property>
+  </action>
+  <action name="actionCall" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/call.png</normaloff>icons/call.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Call</string>
+   </property>
+  </action>
+  <action name="actionHangup" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/hangupsmall.png</normaloff>icons/hangupsmall.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Hangup</string>
+   </property>
+  </action>
+  <action name="actionHide" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/hide.png</normaloff>icons/hide.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Hide</string>
+   </property>
+  </action>
+  <action name="actionShow" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/show.png</normaloff>icons/show.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Show</string>
+   </property>
+  </action>
+  <action name="actionSettings" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/settings.png</normaloff>icons/settings.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionRegister" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/newaccount.png</normaloff>icons/newaccount.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Sign up and register for free</string>
+   </property>
+  </action>
+  <action name="actionAccount" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/account.png</normaloff>icons/account.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Configure Account</string>
+   </property>
+  </action>
+  <action name="actionPassword" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>icons/password.png</normaloff>icons/password.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Change Password</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="1" margin="9" />
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	0CF8E2221C6FB60794CA4D04 /* kiax2core.pro */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 1288}}";
+			sepNavSelRange = "{410, 0}";
+			sepNavVisRange = "{0, 762}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	16610126D80FC413D0669515 /* PConstants.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 588}}";
+			sepNavSelRange = "{47, 0}";
+			sepNavVisRange = "{0, 1280}";
+			sepNavWindowFrame = "{{45, 74}, {895, 664}}";
+		};
+	};
+	176D691162E191C7E991740E /* SignalingModule.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 536}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 462}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	25937524E69C2DFE9A9C3C9F /* APIBinder.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {558, 3024}}";
+			sepNavSelRange = "{2767, 54}";
+			sepNavVisRange = "{2608, 458}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	348BC1A7952003A77D9E6034 /* StorageService.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 896}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 847}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	3F196B0D727D3EA73E2E0FF0 /* IAX2CallbackHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 574}}";
+			sepNavSelRange = "{406, 0}";
+			sepNavVisRange = "{0, 767}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	49D09B2EF9C6E154D542F00D /* SignalingModuleIAX2.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 938}}";
+			sepNavSelRange = "{1242, 36}";
+			sepNavVisRange = "{428, 1000}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	6582624EAF1A0DFC7A3E95E4 /* APIBinder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 1666}}";
+			sepNavSelRange = "{2162, 0}";
+			sepNavVisRange = "{1657, 1163}";
+			sepNavWindowFrame = "{{58, 46}, {895, 664}}";
+		};
+	};
+	74AC90F0AD1FC3DF3C4C1F33 /* Core.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 2198}}";
+			sepNavSelRange = "{77, 0}";
+			sepNavVisRange = "{0, 796}";
+			sepNavWindowFrame = "{{38, 56}, {895, 664}}";
+		};
+	};
+	772AD7990DEC5A410052629A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	772AD79A0DEC5A410052629A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8A02F92EC1F6B7401C44D789 /* libkiax2core */ = {
+		activeExec = 0;
+	};
+	91B15E841AA80083484172DE /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8A02F92EC1F6B7401C44D789 /* libkiax2core */;
+		codeSenseManager = 772AD79A0DEC5A410052629A /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					423,
+					323,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					525,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 243783966;
+			PBXWorkspaceStateSaveDate = 243783966;
+		};
+		sourceControlManager = 772AD7990DEC5A410052629A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A420AC1766C66260CA44215D /* SignalingCallback.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 574}}";
+			sepNavSelRange = "{923, 0}";
+			sepNavVisRange = "{0, 986}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	AA863C406B5327345623EDC4 /* Logger.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 536}}";
+			sepNavSelRange = "{321, 0}";
+			sepNavVisRange = "{0, 576}";
+			sepNavWindowFrame = "{{49, 51}, {895, 664}}";
+		};
+	};
+	B1E40F0CE95F0F1B07BD7251 /* AccountsModuleImpl.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {507, 630}}";
+			sepNavSelRange = "{199, 52}";
+			sepNavVisRange = "{0, 515}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	BBF6090B965F7345B1B1B65D /* APIBinderDefault.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 536}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 256}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+	BC9EF26EA22BCD4567983852 /* StorageService.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {821, 7294}}";
+			sepNavSelRange = "{198, 0}";
+			sepNavVisRange = "{0, 811}";
+			sepNavWindowFrame = "{{44, 84}, {880, 662}}";
+		};
+	};
+	C17D50479BEDC815E3D91CCC /* Logger.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 686}}";
+			sepNavSelRange = "{922, 0}";
+			sepNavVisRange = "{0, 875}";
+			sepNavWindowFrame = "{{48, 70}, {895, 664}}";
+		};
+	};
+	DC90DD18F87A67CBF0EE93F2 /* PConfiguration.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 1456}}";
+			sepNavSelRange = "{4353, 0}";
+			sepNavVisRange = "{0, 1931}";
+			sepNavWindowFrame = "{{84, 60}, {895, 664}}";
+		};
+	};
+	EACE608B66BCCF61A7255220 /* SignalingModuleIAX2.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {674, 2198}}";
+			sepNavSelRange = "{2536, 49}";
+			sepNavVisRange = "{2222, 528}";
+			sepNavWindowFrame = "{{196, 130}, {750, 558}}";
+		};
+	};
+	FE73804D5EB5F6F88586526A /* SignalingAPI.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 658}}";
+			sepNavSelRange = "{728, 0}";
+			sepNavVisRange = "{128, 948}";
+			sepNavWindowFrame = "{{15, 77}, {895, 664}}";
+		};
+	};
+}
