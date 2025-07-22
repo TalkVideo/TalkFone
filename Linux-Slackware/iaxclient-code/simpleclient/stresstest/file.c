@@ -103,7 +103,7 @@ append_node(struct ogg_stream *os, struct op_node *node)
  * To whoever came up with this convoluted scheme: please consider a change of careers.
  */
 static int
-read_theora_cb(OGGZ *oggz, ogg_packet *op, long serialno, void *data)
+read_theora_cb(void *oggz, ogg_packet *op, long serialno, void *data)
 {
 	struct op_node        *node;
 	struct theora_headers *th;

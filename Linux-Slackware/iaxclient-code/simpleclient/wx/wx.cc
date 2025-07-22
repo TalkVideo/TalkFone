@@ -556,7 +556,7 @@ void IAXFrame::CheckPTT()
 void IAXFrame::OnDTMF(wxCommandEvent &evt)
 {
 
-	iaxc_send_dtmf(*buttonlabels[evt.m_id]);
+	iaxc_send_dtmf(*buttonlabels[evt.GetId()]);
 }
 
 void IAXFrame::OnDial(wxCommandEvent& evt)
@@ -604,10 +604,14 @@ void IAXFrame::RegisterFromString(wxString value) {
 
 
 void IAXFrame::OnRegisterMenu(wxCommandEvent &evt) {
+
+	const char* regis = wxGetApp().optRegistration;
+
 	wxTextEntryDialog dialog(this,
 	    wxString("Register with a remote asterisk server",wxConvUTF8),
 	    wxString("Format is user:password@hostname",wxConvUTF8),
-	    wxString(wxGetApp().optRegistration,wxConvUTF8),
+	    // wxString(wxGetApp().optRegistration,wxConvUTF8),
+	    wxString(regis,wxConvUTF8),
 	    wxOK | wxCANCEL);
 
 	if(dialog.ShowModal() == wxID_OK)
@@ -813,7 +817,8 @@ bool IAXClient::OnInit()
 	}
     
 	if(!optDestination.IsEmpty()) 
-	    iaxc_call((char *)optDestination.c_str());
+	    // iaxc_call((char *)optDestination.c_str());
+	    iaxc_call((wxCStrData)optDestination.c_str());
     
 
 	return true; 
