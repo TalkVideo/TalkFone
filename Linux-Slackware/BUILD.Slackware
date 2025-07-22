@@ -1,25 +1,10 @@
+Built With Slackware-Current 07-2025
+
+
 1) Does Not Work Without Pulse Audio. May work with OSS.
 Not Yet Working With ALSA Directly Without Pulse Audio.
 
-2) /etc/ld.so.conf
-/lib64
-/usr/lib64
-/usr/local/lib
-/usr/local/lib64
-/lib
-/usr/lib
-/usr/x86_64-slackware-linux/lib64
-/usr/lib64/seamonkey
-<install-dir>/Qt/5.9.3/gcc_64/lib
-
-3) Fix pkg-config locations.
-Include /usr/local/lib/pkgconfig
-cp /usr/local/lib/pkgconfig/* /usr/share/pkgconfig
-rm -rf /usr/local/lib/pkgconfig
-ln -s /usr/share/pkgconfig /usr/local/lib/pkgconfig
-
-
-4) IAX Client:
+2) IAX Client:
 requires portaudio
 pa_stable_v190700_20210406.tgz
 
@@ -34,29 +19,20 @@ requires vidcap -- may be disabled
 libvidcap-0.2.1
 
 Configured With:
-./configure --prefix=$HOME/TalkFone --enable-local-gsm --enable-static --enable-clients=testcal
+./configure --prefix=$HOME/TalkFone --enable-local-gsm --enable-static --enable-clients=testcall
 (clients iaxphone iaxcomm stresstest, etc require additional deps).
 
 
-5) Kiax:
+3) Kiax:
 requires wxWidgets-3.0.x
 
-Edit These Files To Use Libraries Built In The System:
+Edit These Files According To System:
 kiax2core/gui.pro 
 kiax2core/kiax2core.pro 
 
-./qmake5
-or
-./qmake6
-from kiax-code directory
-
-kiax20-linux-static-libs.tar.gz
-The libraries in this file are 32-Bit i386, and missing
-libldns. But it shows the dependencies, and helps in
-identifying versions used.
-
-requires libldns
-libldns ./configure --disable-dane-verify  --disable-dane-ta-usage
+Then run:
+qmake6
+from top-level of kiax-code directory
 
 Add Kiax user to audio and video groups
 
