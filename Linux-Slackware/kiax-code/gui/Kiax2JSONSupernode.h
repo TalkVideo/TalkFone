@@ -3,8 +3,9 @@
 
 #include <QtWidgets/QWidget>
 #include <QtNetwork>
-#include <QtHttpServer/QHttpServer>
 #include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
 #ifdef WIN32DEP
 #include <cstdlib.>
 #endif
@@ -38,7 +39,9 @@ signals:
 	void requestError();
 	
 private:
-    QHttpServer *http;
+    QNetworkAccessManager *qnam;
+    QNetworkRequest *qrequest;
+    QNetworkReply *qreply;
     int httpGetId;
     bool httpRequestAborted;
 

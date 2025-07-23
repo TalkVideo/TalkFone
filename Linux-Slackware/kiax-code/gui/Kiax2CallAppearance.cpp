@@ -1,6 +1,6 @@
 #include "Kiax2CallAppearance.h"
 #include "PConstants.h"
-#include <QDesktopWidget>
+#include <QtWidgets/QWidget>
 #include "Kiax2MainWindow.h"
 
 inline double fround(double n, unsigned d)
@@ -25,7 +25,7 @@ Kiax2CallAppearance::Kiax2CallAppearance(QWidget* parent, APIBinder* binder, Con
 	connect(closeTimer, SIGNAL(timeout()), this, SLOT(closeAppearance()));
 	
 	flags = windowFlags();
-	QDesktopWidget* desktop = QApplication::desktop();
+	// QDesktopWidget* desktop = QApplication::desktop();
 
 	initialized = false;
 	

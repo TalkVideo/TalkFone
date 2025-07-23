@@ -7,37 +7,50 @@ typedef int boolean;
 
 Kiax2JSONNotification::Kiax2JSONNotification(QWidget* parent) : QWidget(NULL)
 {
-     http = new QHttp(this);
-     connect(http, SIGNAL(requestFinished(int, bool)),
+	 qnam = new QNetworkAccessManager(this);
+
+     connect(qnam, SIGNAL(requestFinished(int, bool)),
              this, SLOT(httpRequestFinished(int, bool)));
-     connect(http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
-             this, SLOT(readResponseHeader(const QHttpResponseHeader &)));
-	 connect(http, SIGNAL(sslErrors ( const QList<QSslError> & )),
+     connect(qnam, SIGNAL(responseHeaderReceived(const QNetworkReply &)),
+             this, SLOT(readResponseHeader(const QNetworkReply &)));
+	 connect(qnam, SIGNAL(sslErrors ( const QList<QSslError> & )),
              this, SLOT(sslHandle(const QList<QSslError> &)));
  }
 
 Kiax2JSONNotification::~Kiax2JSONNotification()
 {
-	delete http;
+	delete qnam;
 }
 
 void Kiax2JSONNotification::getJSONData(QString requestUrl)
 {
      QUrl url(requestUrl);
+
      // add useranme and password to the query only if notification is not anonymous (for branders only)
      // kiax does not need user information, except version
-     if ((!JSON_NOTIFICATION_ANONYMOUS)&&(username!="")&&(password!=""))
-     {     	url.addQueryItem(JSON_USERNAME_PARAMETER, username);
-     	url.addQueryItem(JSON_PASSWORD_PARAMETER, password);
+     if ((!JSON_NOTIFICATION_ANONYMOUS)&&(username!="")&&(password!="")) {     	
+	 	QByteArray authString = (url.userName() + ":" + url.password()).toUtf8().toBase64();
+	 	qrequest->setRawHeader("Authorization", "Basic " + authString);
+		// url.addQueryItem(JSON_USERNAME_PARAMETER, username);
+	    // url.addQueryItem(JSON_PASSWORD_PARAMETER, password);
      }
-	if (version!="")
-     	url.addQueryItem(JSON_SOFTPHONEVERSION_PARAMETER, version);
-     Logger::log(Logger::DEBUG, "json notification request url is %s\n", url.toString().toStdString().data());
-     QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
-     http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+
+	if (version!="") {
+		// TODO Add To RawHeader
+     	// url.addQueryItem(JSON_SOFTPHONEVERSION_PARAMETER, version);
+	}
+     
+	Logger::log(Logger::DEBUG, "json notification request url is %s\n", url.toString().toStdString().data());
+
+     // QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
+     // http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+	 
+	 QNetworkRequest qrequest(url);
 
      httpRequestAborted = false;
-     httpGetId = http->get(url.toString());
+     // httpGetId = http->get(url.toString());
+     // TODO Fix This
+     httpGetId = 1;
 
 	 emit requestInitiated();
 	 
@@ -46,13 +59,13 @@ void Kiax2JSONNotification::getJSONData(QString requestUrl)
 void Kiax2JSONNotification::sslHandle( const QList<QSslError> & errors)
 {	
 	/// enable for openssl
-	http->ignoreSslErrors();
+	qreply->ignoreSslErrors();
 }
 
 void Kiax2JSONNotification::cancelRequest()
 {	
     httpRequestAborted = true;
-    http->abort();
+    qreply->abort();
 	emit requestAborted();
 }
 
@@ -62,7 +75,7 @@ void Kiax2JSONNotification::httpRequestFinished(int requestId, bool error)
          return;
      }
 
-	 QString jsondata(http->readAll().constData());
+	 QString jsondata(qreply->readAll().constData());
 	 
 	if (!httpRequestAborted)
 	{
@@ -127,11 +140,14 @@ void Kiax2JSONNotification::httpRequestFinished(int requestId, bool error)
 	 
 }
 
-void Kiax2JSONNotification::readResponseHeader(const QHttpResponseHeader &responseHeader)
+void Kiax2JSONNotification::readResponseHeader(const QNetworkReply &responseHeader)
 {
-    if (responseHeader.statusCode() != 200) {
+	QNetworkReply::NetworkError error = qreply->error();
+
+	if (error != QNetworkReply::NoError) {
+    // if (responseHeader.statusCode() != 200) {
          httpRequestAborted = true;
-         http->abort();
+         qreply->abort();
 		 emit requestError();
          return;
      }
@@ -141,7 +157,8 @@ void Kiax2JSONNotification::readResponseHeader(const QHttpResponseHeader &respon
 bool Kiax2JSONNotification::isAborted()
 {
 	return httpRequestAborted;
-}
+}
+
 void Kiax2JSONNotification::setUsername(QString usernameStr)
 {
 	username = usernameStr;

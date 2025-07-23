@@ -8,34 +8,42 @@ typedef int boolean;
 
 Kiax2JSONBalance::Kiax2JSONBalance(QWidget* parent) : QWidget(NULL)
 {
-     http = new QHttp(this);
-     connect(http, SIGNAL(requestFinished(int, bool)),
+	 qnam = new QNetworkAccessManager(this);
+
+     connect(qnam, SIGNAL(requestFinished(int, bool)),
              this, SLOT(httpRequestFinished(int, bool)));
-     connect(http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
-             this, SLOT(readResponseHeader(const QHttpResponseHeader &)));
-	 connect(http, SIGNAL(sslErrors ( const QList<QSslError> & )),
+     connect(qnam, SIGNAL(responseHeaderReceived(const QNetworkReply &)),
+             this, SLOT(readResponseHeader(const QNetworkReply &)));
+	 connect(qnam, SIGNAL(sslErrors ( const QList<QSslError> & )),
              this, SLOT(sslHandle(const QList<QSslError> &)));
  }
 
 Kiax2JSONBalance::~Kiax2JSONBalance()
 {
-	delete http;
+	delete qnam;
 }
 
 void Kiax2JSONBalance::getJSONData(QString requestUrl)
 {
      QUrl url(requestUrl);
-	 url.addQueryItem("username", username);
-	 url.addQueryItem("password", password);
+	 QByteArray authString = (url.userName() + ":" + url.password()).toUtf8().toBase64();
+	 qrequest->setRawHeader("Authorization", "Basic " + authString);
 
-     QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
-     http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+	 // url.addQueryItem("username", username);
+	 // url.addQueryItem("password", password);
 
-     if (!url.userName().isEmpty())
-         http->setUser(url.userName(), url.password());
+     // QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
+     // http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+
+     // if (!url.userName().isEmpty())
+         // http->setUser(url.userName(), url.password());
+	 
+	 QNetworkRequest qrequest(url);
 
      httpRequestAborted = false;
-     httpGetId = http->get(url.toString());
+	 //TODO Fix This
+     // httpGetId = http->get(url.toString());
+     httpGetId = 1;
 
 	 emit requestInitiated();
 	 
@@ -44,13 +52,13 @@ void Kiax2JSONBalance::getJSONData(QString requestUrl)
 void Kiax2JSONBalance::sslHandle( const QList<QSslError> & errors)
 {	
 	/// enable for openssl
-	http->ignoreSslErrors();
+	qreply->ignoreSslErrors();
 }
 
 void Kiax2JSONBalance::cancelRequest()
 {	
     httpRequestAborted = true;
-    http->abort();
+    qreply->abort();
 	emit requestAborted();
 }
 
@@ -60,7 +68,7 @@ void Kiax2JSONBalance::httpRequestFinished(int requestId, bool error)
          return;
      }
 
-	 QString data(http->readAll().constData());
+	 QString data(qreply->readAll().constData());
 	 
 	 emit requestComplete(httpRequestAborted, data);
 
@@ -70,11 +78,14 @@ void Kiax2JSONBalance::httpRequestFinished(int requestId, bool error)
 	 
 }
 
-void Kiax2JSONBalance::readResponseHeader(const QHttpResponseHeader &responseHeader)
+void Kiax2JSONBalance::readResponseHeader(const QNetworkReply &responseHeader)
 {
-    if (responseHeader.statusCode() != 200) {
+	QNetworkReply::NetworkError error = qreply->error();
+
+	if (error != QNetworkReply::NoError) {
+    // if (responseHeader.statusCode() != 200) {
          httpRequestAborted = true;
-         http->abort();
+         qreply->abort();
 		 emit requestError();
          return;
      }

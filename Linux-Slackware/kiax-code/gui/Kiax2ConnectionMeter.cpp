@@ -1,4 +1,3 @@
-
 #include "Kiax2ConnectionMeter.h"
 #ifdef WIN32DEP
 #include <windows.h>
@@ -11,14 +10,14 @@
 
 Kiax2ConnectionMeter::Kiax2ConnectionMeter(QWidget* parent) : QWidget(parent)
 {
-     progressDialog = new QProgressDialog(this);
-     http = new QHttp(this);
-     connect(http, SIGNAL(requestFinished(int, bool)),
+	 qnam = new QNetworkAccessManager(this);
+
+     connect(qnam, SIGNAL(requestFinished(int, bool)),
              this, SLOT(httpRequestFinished(int, bool)));
-     connect(http, SIGNAL(dataReadProgress(int, int)),
+     connect(qnam, SIGNAL(dataReadProgress(int, int)),
              this, SLOT(updateDataReadProgress(int, int)));
-     connect(http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
-             this, SLOT(readResponseHeader(const QHttpResponseHeader &)));
+     connect(qnam, SIGNAL(responseHeaderReceived(const QNetworkReply &)),
+             this, SLOT(readResponseHeader(const QNetworkReply &)));
 	 connect(progressDialog, SIGNAL(canceled()), this, SLOT(cancelDownload()));		
 		startTime = 0;
 		endTime = 0;
@@ -28,7 +27,7 @@ Kiax2ConnectionMeter::Kiax2ConnectionMeter(QWidget* parent) : QWidget(parent)
 Kiax2ConnectionMeter::~Kiax2ConnectionMeter()
 {
 	delete progressDialog;
-	delete http;
+	delete qrequest;
 }
 
 void Kiax2ConnectionMeter::downloadFile()
@@ -52,28 +51,32 @@ void Kiax2ConnectionMeter::downloadFile()
          return;
      }
 
-     QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
-     http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+     // QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
+     // http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+    
+	 QNetworkRequest qrequest(url);
 
-     if (!url.userName().isEmpty())
-         http->setUser(url.userName(), url.password());
+     if (!url.userName().isEmpty()) {
+		 QByteArray authString = (url.userName() + ":" + url.password()).toUtf8().toBase64();
+		 qrequest.setRawHeader("Authorization", "Basic " + authString);
+	 }
 
      httpRequestAborted = false;
 	 startTime = QDateTime::currentDateTime().toSecsSinceEpoch();
-     httpGetId = http->get(url.path(), file);
+     // httpGetId = http->get(url.path(), file);
 
      progressDialog->setWindowTitle(tr("Test"));
-     progressDialog->setLabelText(tr("Testing connection speed.."));
+     progressDialog->setLabelText(tr("Testing connection speed.. Fix This In Code"));
 	 progressDialog->show();
 }
 
 void Kiax2ConnectionMeter::cancelDownload()
-{	
+{
     httpRequestAborted = true;
 	endTime = 0;
 	totalBytes = 0;
 	progressDialog->hide();
-    http->abort();
+    qreply->abort();
 }
 
 void Kiax2ConnectionMeter::httpRequestFinished(int requestId, bool error)
@@ -110,14 +113,17 @@ void Kiax2ConnectionMeter::httpRequestFinished(int requestId, bool error)
      file = 0;
 }
 
-void Kiax2ConnectionMeter::readResponseHeader(const QHttpResponseHeader &responseHeader)
+void Kiax2ConnectionMeter::readResponseHeader(const QNetworkReply &responseHeader)
 {
-    if (responseHeader.statusCode() != 200) {
+	QNetworkReply::NetworkError error = qreply->error();
+
+	if (error != QNetworkReply::NoError) {
+    // if (responseHeader.statusCode() != 200) {
          QMessageBox::information(this, tr("Test"),
                                   tr("Speed test failed."));
          httpRequestAborted = true;
          progressDialog->hide();
-         http->abort();
+         qreply->abort();
          return;
      }
 }

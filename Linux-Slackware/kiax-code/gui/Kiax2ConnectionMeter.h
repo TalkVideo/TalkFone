@@ -3,12 +3,19 @@
 #include <QtNetwork>
 #include <QtWidgets/QProgressDialog>
 #include <QFile>
-#include <QtHttpServer/QHttpServer>
+
 #include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QUrl>
+#include <QDebug>
+
 #include <QtWidgets/QMessageBox>
+
 #ifdef WIN32DEP
 #include <cstdlib.>
 #endif
+
 #include <string>
 #include "Logger.h"
 #include <dirent.h>
@@ -42,7 +49,9 @@ signals:
 private:
 	uint startTime, endTime, totalBytes;
 	QProgressDialog *progressDialog;	
-    QHttpServer *http;
+    QNetworkAccessManager *qnam;
+    QNetworkRequest *qrequest;
+    QNetworkReply *qreply;
     QFile *file;
     int httpGetId;
     bool httpRequestAborted;

@@ -2,7 +2,7 @@
 
 #include <QtNetwork>
 #include "Logger.h"
-#include <QApplication>
+#include <QtWidgets/QApplication>
 #include "Kiax2MainWindow.h"
 #include "Kiax2Servers.h"
 #include <vector>
@@ -85,13 +85,16 @@ int * Kiax2DispatcherThread::getNumbersList(int* numbersLength)
 void Kiax2DispatcherThread::readMessage()
 {
 	retried = false;
+
 	QUrl url;
+    QUrlQuery qurlquery;
+
 	Logger::log(Logger::DEBUG, "readMessage() IN\n");
 	char buf[1024];
-     qint64 lineLength = connection->readLine(buf, sizeof(buf));
-	 connection->readAll();
-	 QString path;
-	 QList< QPair<QString, QString> > parameters;
+    qint64 lineLength = connection->readLine(buf, sizeof(buf));
+	connection->readAll();
+	QString path;
+	QList< QPair<QString, QString> > parameters;
 
      if (lineLength != -1) {
 		QString messageStr(buf);
@@ -104,8 +107,11 @@ void Kiax2DispatcherThread::readMessage()
 		// strip GET and /
 		path.remove(0, 4);
 		qurl.setPath(path);
-		parameters = qurl.queryItems();
 		url = qurl;
+
+		// TODO Fix This
+		parameters = qurlquery.queryItems();
+
      }
 
 	QString returnHtml = "</div>";
@@ -139,7 +145,7 @@ void Kiax2DispatcherThread::readMessage()
 			if ((path=="/call")||(path=="/hangupandcall"))
 			{
 				Logger::log(Logger::DEBUG,"path = /call\n");
-				QString number = url.queryItemValue("number");
+				QString number = qurlquery.queryItemValue("number");
 				requestUrl = requestUrl + "/calls/call" + "/" + username + "/" + number;
 				if(username!="")
 					requestUrl = requestUrl + "&username=" + username;
@@ -162,7 +168,7 @@ void Kiax2DispatcherThread::readMessage()
 			if ((path=="/call")||(path=="/hangupandcall"))
 			{
 				Logger::log(Logger::DEBUG,"path = /call\n");
-				QString number = url.queryItemValue("number");
+				QString number = qurlquery.queryItemValue("number");
 				QString requestUrl = "https://" + redirectServer + "/click2dial.php?number=" + number;
 				if(username!="") 
 					requestUrl = requestUrl + "&username=" + username;
@@ -193,7 +199,7 @@ void Kiax2DispatcherThread::readMessage()
 						Logger::log(Logger::DEBUG,"mixpbx user\n");
 						std::string iaxServer1 = Kiax2MainWindow::servers->getServers()[0];
 						std::string iaxServer2 = Kiax2MainWindow::servers->getServers()[1];
-						QString number = url.queryItemValue("number");
+						QString number = qurlquery.queryItemValue("number");
 						Account* account = new Account();
 						account->host1 = iaxServer1;
 						account->host2 = iaxServer2;
@@ -214,7 +220,7 @@ void Kiax2DispatcherThread::readMessage()
 					}
 					else {
 						Logger::log(Logger::DEBUG,"supernode user\n");
-						QString number = url.queryItemValue("number");
+						QString number = qurlquery.queryItemValue("number");
 						if ((number!="")&&(number!="null"))
 						{
 							if (path=="/hangupandcall")
@@ -230,7 +236,7 @@ void Kiax2DispatcherThread::readMessage()
 				}					
 				else {
 					Logger::log(Logger::DEBUG,"no api servers present\n");
-					QString number = url.queryItemValue("number");
+					QString number = qurlquery.queryItemValue("number");
 					if ((number!="")&&(number!="null"))
 					{
 						if (path=="/hangupandcall")
@@ -261,7 +267,7 @@ void Kiax2DispatcherThread::readMessage()
 	}		
 	if (path=="/register")
 	{
-		QList< QPair<QString, QString> > parameters = url.queryItems();
+		QList< QPair<QString, QString> > parameters = qurlquery.queryItems();
 		QString username;
 		QString password;
 		QString host1;

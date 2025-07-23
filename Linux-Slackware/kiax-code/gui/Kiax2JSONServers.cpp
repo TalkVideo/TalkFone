@@ -7,29 +7,34 @@ typedef int boolean;
 
 Kiax2JSONServers::Kiax2JSONServers(QWidget* parent) : QWidget(NULL)
 {
-     http = new QHttp(this);
-     connect(http, SIGNAL(requestFinished(int, bool)),
+	 qnam = new QNetworkAccessManager(this);
+
+     connect(qnam, SIGNAL(requestFinished(int, bool)),
              this, SLOT(httpRequestFinished(int, bool)));
-     connect(http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
-             this, SLOT(readResponseHeader(const QHttpResponseHeader &)));
-	 connect(http, SIGNAL(sslErrors ( const QList<QSslError> & )),
+     connect(qnam, SIGNAL(responseHeaderReceived(const QNetworkReply &)),
+             this, SLOT(readResponseHeader(const QNetworkReply &)));
+	 connect(qnam, SIGNAL(sslErrors ( const QList<QSslError> & )),
              this, SLOT(sslHandle(const QList<QSslError> &)));
  }
 
 Kiax2JSONServers::~Kiax2JSONServers()
 {
-	delete http;
+	delete qnam;
 }
 
 void Kiax2JSONServers::getJSONData(QString requestUrl)
 {
      QUrl url(requestUrl);
 
-     QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
-     http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+     // QHttp::ConnectionMode mode = url.scheme().toLower() == "https" ? QHttp::ConnectionModeHttps : QHttp::ConnectionModeHttp;
+     // http->setHost(url.host(), mode, url.port() == -1 ? 0 : url.port());
+
+	 QNetworkRequest qrequest(url);
 
      httpRequestAborted = false;
-     httpGetId = http->get(url.toString());
+	 // TODO Fix This
+     // httpGetId = http->get(url.toString());
+     httpGetId = 1;
 
 	 emit requestInitiated();
 	 
@@ -38,13 +43,13 @@ void Kiax2JSONServers::getJSONData(QString requestUrl)
 void Kiax2JSONServers::sslHandle( const QList<QSslError> & errors)
 {	
 	/// enable for openssl
-	http->ignoreSslErrors();
+	qreply->ignoreSslErrors();
 }
 
 void Kiax2JSONServers::cancelRequest()
 {	
     httpRequestAborted = true;
-    http->abort();
+    qreply->abort();
 	emit requestAborted();
 }
 
@@ -54,7 +59,7 @@ void Kiax2JSONServers::httpRequestFinished(int requestId, bool error)
          return;
      }
 
-	 QString data(http->readAll().constData());
+	 QString data(qreply->readAll().constData());
 	 
 	 emit requestComplete(httpRequestAborted, data);
 
@@ -64,11 +69,14 @@ void Kiax2JSONServers::httpRequestFinished(int requestId, bool error)
 	 
 }
 
-void Kiax2JSONServers::readResponseHeader(const QHttpResponseHeader &responseHeader)
+void Kiax2JSONServers::readResponseHeader(const QNetworkReply &responseHeader)
 {
-    if (responseHeader.statusCode() != 200) {
+	QNetworkReply::NetworkError error = qreply->error();
+
+	if (error != QNetworkReply::NoError) {
+    // if (responseHeader.statusCode() != 200) {
          httpRequestAborted = true;
-         http->abort();
+         qreply->abort();
 		 emit requestError();
          return;
      }
