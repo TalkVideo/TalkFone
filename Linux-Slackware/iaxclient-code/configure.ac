@@ -1,11 +1,11 @@
 dnl Copyright (C) 2004-2005  Mikael Magnusson <mikma@users.sourceforge.net>
 
-AC_PREREQ(2.59)
+AC_PREREQ([2.72])
 
 dnl Package version
 m4_define(IAXC_VERSION, [2.x-trunk])
 
-AC_INIT(iaxclient, IAXC_VERSION, [iaxclient-devel@lists.sourceforge.net])
+AC_INIT([iaxclient],[IAXC_VERSION],[iaxclient-devel@lists.sourceforge.net])
 
 AC_CONFIG_SRCDIR([lib/iaxclient.h])
 AC_CONFIG_HEADERS([config.h])
@@ -24,19 +24,52 @@ AC_SUBST(IAXC_LT_AGE)
 
 AC_CANONICAL_HOST
 
-AC_GNU_SOURCE
+AC_USE_SYSTEM_EXTENSIONS
 
 AC_PROG_CC
 AM_PROG_CC_C_O
-AC_PROG_GCC_TRADITIONAL
+m4_warn([obsolete],
+[m4_warn([obsolete],
+[AC_PROG_GCC_TRADITIONAL is obsolete; use AC_PROG_CC
+])dnl
+AC_REQUIRE(AC_PROG_CC) is obsolete; use AC_PROG_CC
+])dnl
+AC_REQUIRE(AC_PROG_CC)
 AC_PROG_CXX
 AC_PROG_INSTALL
-AC_LIBTOOL_WIN32_DLL
-AC_PROG_LIBTOOL
+AC_REQUIRE(AC_CANONICAL_HOST)_LT_SET_OPTION([LT_INIT],[win32-dll])
+m4_warn([obsolete],[AC_REQUIRE(AC_CANONICAL_HOST)_LT_SET_OPTION([LT_INIT],[win32-dll])
+m4_warn([obsolete],[AC_LIBTOOL_WIN32_DLL: Remove this warning and the call to _LT_SET_OPTION when you
+put the 'win32-dll' option into LT_INIT's first parameter.])
+: Remove this warning and the call to _LT_SET_OPTION when you
+put the 'win32-dll' option into LT_INIT's first parameter.])
 
-AC_HEADER_STDC
+LT_INIT
+
+m4_warn([obsolete],
+[The preprocessor macro 'STDC_HEADERS' is obsolete.
+  Except in unusual embedded environments, you can safely include all
+  C89 headers unconditionally.])dnl
+# Autoupdate added the next two lines to ensure that your configure
+# script's behavior did not change.  They are probably safe to remove.
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
 AC_HEADER_STDBOOL
-AC_HEADER_TIME
+m4_warn([obsolete],
+[Update your code to rely only on HAVE_SYS_TIME_H,
+then remove this warning and the obsolete code below it.
+All current systems provide time.h; it need not be checked for.
+Not all systems provide sys/time.h, but those that do, all allow
+you to include it and time.h simultaneously.])dnl
+AC_CHECK_HEADERS_ONCE([sys/time.h])
+# Obsolete code to be removed.
+if test $ac_cv_header_sys_time_h = yes; then
+  AC_DEFINE([TIME_WITH_SYS_TIME],[1],[Define to 1 if you can safely include both <sys/time.h>
+	     and <time.h>.  This macro is obsolete.])
+fi
+# End of obsolete code.
+
 AC_CHECK_HEADERS([sys/time.h varargs.h sys/socket.h])
 
 AC_C_CONST

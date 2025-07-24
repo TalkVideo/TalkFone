@@ -3,27 +3,21 @@ TEMPLATE = lib
 INCLUDEPATH +=./includes
 CORELIBDIR =../kiax2core
 
-win32 {
-LIBSDIR +=./libs-windows
-LIBS += $$LIBSDIR/iaxclient.dll $$LIBSDIR/sqlite3.dll -llibcurl
-DEFINES += WIN32DEP
-}
-
 linux-g++ {
-# Uncomment if you want dynamic linking
+
+LIBSDIR += $$CORELIBDIR/static-libs-linux
+LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $/usr/lib64/libsqlite3.so /usr/lib/libasound.so.2
+
+# LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libsqlite3.a /usr/lib/libasound.so.2
+
+# Uncomment if you want explicit dynamic linking
 # LIBSDIR +=./libs-linux
 # LIBS += $$LIBSDIR/libiaxclient.so.1.0.2 $$LIBSDIR/libsqlite3.so.0.8.6
-LIBSDIR += $$CORELIBDIR/static-libs-linux
-LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libgsm.a $$LIBSDIR/libsqlite3.a /usr/lib/libasound.so.2
+
 
 DEFINES += LINUXDEP
 }
 
-macx {
-LIBSDIR +=./libs-macx
-LIBS += $$LIBSDIR/libiaxclient.dylib $$LIBSDIR/libsqlite3.dylib
-DEFINES += MACXDEP
-}
 
 # Comment if you want dynamic lib
  CONFIG += staticlib
@@ -118,7 +112,6 @@ SOURCES += APIBinder.cpp \
 		
 build_all:!build_pass {
     CONFIG -= build_all
-    CONFIG += dll debug
 }
 
 

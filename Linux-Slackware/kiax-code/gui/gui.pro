@@ -1,37 +1,25 @@
 template = app
 CONFIG += qt
 CORELIBDIR = ../kiax2core
-INCLUDEPATH += $$CORELIBDIR $$CORELIBDIR/includes $$CORELIBDIR/includes/json $$CORELIBDIR/dottelutils
+INCLUDEPATH += $$CORELIBDIR $$CORELIBDIR/includes $$CORELIBDIR/includes/json
 
 # set USEWEBKIT to true if you want to link to webkit shared library
 USEWEBKIT = false
 
-win32 {
-LIBSDIR += $$CORELIBDIR/libs-windows
-LIBS += $$LIBSDIR/iaxclient.dll $$LIBSDIR/sqlite3.dll $$CORELIBDIR/release/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libcurl-4.dll -leay32 -lssleay32
-DEFINES += WIN32DEP
-}
-
 linux-g++ {
 # Uncomment if you want dynamic linking
 # LIBSDIR += $$CORELIBDIR/libs-linux
-# LIBS += -L/usr/lib -L/usr/local/lib -L$$CORELIBDIR -liaxclient -lkiax2core -ljson -lspeexdsp -lspeex -lportaudio -lgsm -lsqlite3 -lasound 
+# LIBS += -L/usr/lib -L/usr/lib4 -L/usr/local/lib -L /usr/local/lib64 -L$$CORELIBDIR -liaxclient -lkiax2core -ljson -lspeexdsp -lspeex -lportaudio -lsqlite3 -lasound 
 
 LIBSDIR += $$CORELIBDIR/static-libs-linux
-LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libgsm.a $$LIBSDIR/libsqlite3.a -lcurl /usr/lib64/libasound.so.2 
+LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libsqlite3.a -lcurl /usr/lib64/libasound.so.2 
 
 LIBS += -lQt6Widgets -lQt6Core5Compat
 
-# Uncomment if you want dynamic linking
+# Uncomment if you want explicit dynamic linking
 # LIBS += $$LIBSDIR/libiaxclient.so.1.0.2 $$LIBSDIR/libsqlite3.so.0.8.6 $$CORELIBDIR/libkiax2core.so.1.0.0 $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.so.1.4.0 $$LIBSDIR/libspeex.so.1.4.0
-DEFINES += LINUXDEP
-}
 
-macx {
-LIBSDIR += $$CORELIBDIR/libs-macx
-LIBS += $$LIBSDIR/libiaxclient.dylib $$LIBSDIR/libsqlite3.dylib $$CORELIBDIR/libkiax2core.dylib $$LIBSDIR/libjson.a -lcurl
-DEFINES += MACXDEP
-ICON = macosicons.icns
+DEFINES += LINUXDEP
 }
 
 KIAXOPT += dottel
@@ -45,20 +33,19 @@ contains( KIAXOPT, dottel ): {
 	SOURCES += 	Kiax2DotTelDialog.cpp
 
 	FORMS += dotteldialog.ui
-#	INCLUDEPATH += voip/ldns-1.4.0
+	INCLUDEPATH += $$CORELIBDIR/dottelutils
+
 	linux-g++ {
 		# LIBS += $$LIBSDIR/libldns.a -lcrypto
 		LIBS += /usr/local/lib/libldns.a -lcrypto
 	}
-	win32 {
-		LIBS += $$LIBSDIR/libldns.a -lwsock32 -liphlpapi
-	}
 }
 
-# comment if you don't have hold() in your iaxclient
+# comment if you dont have hold() in your iaxclient
 # DEFINES += IAXCLIENT_HOLD_HACK
 
 QT += network
+
 contains( KIAXOPT, webforms ): {
 	message("Using Webforms + WebKit..")
 	QT += webkit
@@ -145,7 +132,6 @@ TRANSLATIONS = kiax2_fr.ts \
 			
 build_all:!build_pass {
     CONFIG -= build_all
-    CONFIG += release windows
 }
 
 
