@@ -20,6 +20,8 @@ linux-g++ {
 LIBSDIR += $$CORELIBDIR/static-libs-linux
 LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libgsm.a $$LIBSDIR/libsqlite3.a -lcurl /usr/lib64/libasound.so.2 
 
+LIBS += -lQt6Widgets -lQt6Core5Compat
+
 # Uncomment if you want dynamic linking
 # LIBS += $$LIBSDIR/libiaxclient.so.1.0.2 $$LIBSDIR/libsqlite3.so.0.8.6 $$CORELIBDIR/libkiax2core.so.1.0.0 $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.so.1.4.0 $$LIBSDIR/libspeex.so.1.4.0
 DEFINES += LINUXDEP
@@ -45,7 +47,8 @@ contains( KIAXOPT, dottel ): {
 	FORMS += dotteldialog.ui
 #	INCLUDEPATH += voip/ldns-1.4.0
 	linux-g++ {
-		LIBS += $$LIBSDIR/libldns.a -lcrypto
+		# LIBS += $$LIBSDIR/libldns.a -lcrypto
+		LIBS += /usr/local/lib/libldns.a -lcrypto
 	}
 	win32 {
 		LIBS += $$LIBSDIR/libldns.a -lwsock32 -liphlpapi

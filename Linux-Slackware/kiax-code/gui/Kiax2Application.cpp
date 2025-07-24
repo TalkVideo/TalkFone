@@ -43,6 +43,12 @@ Kiax2Application::~Kiax2Application()
 {
 }
 
+int Kiax2Application::argc() {
+}
+
+char** Kiax2Application::argv() {
+}
+
 bool Kiax2Application::event(QEvent* event)
 {
 	//Logger::log(Logger::DEBUG, "Event %d\n", event->type());
