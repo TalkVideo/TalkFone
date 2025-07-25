@@ -23,8 +23,12 @@ Kiax2MainWindow::Kiax2MainWindow(Kiax2Application* app)
 #endif
 	application = app;
 
-    int argc = app->argc();
-    char** args = app->argv();
+	Logger::log(Logger::INFO, "%s\n", __FUNCTION__);
+    // int argc = app->argc();
+    // char** args = app->argv();
+	
+    int argc = 1;
+    char** args;
 	
 	Logger::init(LOG_LEVEL);
 	

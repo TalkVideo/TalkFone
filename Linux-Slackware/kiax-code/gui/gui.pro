@@ -1,20 +1,20 @@
 template = app
 CONFIG += qt
 CORELIBDIR = ../kiax2core
-INCLUDEPATH += $$CORELIBDIR $$CORELIBDIR/includes $$CORELIBDIR/includes/json
+INCLUDEPATH += $$CORELIBDIR $$CORELIBDIR/includes /home/talkvideo/JSON-C/include/json # $$CORELIBDIR/includes/json
 
 # set USEWEBKIT to true if you want to link to webkit shared library
 USEWEBKIT = false
 
 linux-g++ {
+LIBSDIR += $$CORELIBDIR/static-libs-linux
+LIBS += $$CORELIBDIR/libkiax2core.a  $$LIBSDIR/libiaxclient.a /home/talkvideo/JSON-C/lib/libjson.so $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libsqlite3.a -lcurl /usr/lib64/libasound.so.2 
+
+LIBS += -lQt6Widgets -lQt6Core5Compat
+
 # Uncomment if you want dynamic linking
 # LIBSDIR += $$CORELIBDIR/libs-linux
 # LIBS += -L/usr/lib -L/usr/lib4 -L/usr/local/lib -L /usr/local/lib64 -L$$CORELIBDIR -liaxclient -lkiax2core -ljson -lspeexdsp -lspeex -lportaudio -lsqlite3 -lasound 
-
-LIBSDIR += $$CORELIBDIR/static-libs-linux
-LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libsqlite3.a -lcurl /usr/lib64/libasound.so.2 
-
-LIBS += -lQt6Widgets -lQt6Core5Compat
 
 # Uncomment if you want explicit dynamic linking
 # LIBS += $$LIBSDIR/libiaxclient.so.1.0.2 $$LIBSDIR/libsqlite3.so.0.8.6 $$CORELIBDIR/libkiax2core.so.1.0.0 $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.so.1.4.0 $$LIBSDIR/libspeex.so.1.4.0

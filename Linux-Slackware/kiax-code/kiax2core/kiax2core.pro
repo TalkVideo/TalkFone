@@ -6,7 +6,7 @@ CORELIBDIR =../kiax2core
 linux-g++ {
 
 LIBSDIR += $$CORELIBDIR/static-libs-linux
-LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $/usr/lib64/libsqlite3.so /usr/lib/libasound.so.2
+LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $/usr/lib64/libsqlite3.so /usr/lib/libasound.so.2
 
 # LIBS += $$LIBSDIR/libiaxclient.a $$CORELIBDIR/libkiax2core.a $$LIBSDIR/libjson.a $$LIBSDIR/libspeexdsp.a $$LIBSDIR/libspeex.a $$LIBSDIR/libportaudio.a $$LIBSDIR/libsqlite3.a /usr/lib/libasound.so.2
 

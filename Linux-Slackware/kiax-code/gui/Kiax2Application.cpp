@@ -44,6 +44,8 @@ Kiax2Application::~Kiax2Application()
 }
 
 int Kiax2Application::argc() {
+	Logger::log(Logger::INFO, "argc: %d\n");
+	return 1;
 }
 
 char** Kiax2Application::argv() {
