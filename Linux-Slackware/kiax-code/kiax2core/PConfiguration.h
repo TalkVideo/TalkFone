@@ -82,7 +82,7 @@
 #define ENABLE_SHOW_HIDE_COMMANDS		true
 #define CALL_RATES_FONT					8
 #define SINGLE_CONNECT_DISCONNECT		true
-#define ABOUT_URL						"<a href='http://www.kiax.org'>http://www.kiax.org</a>"
+#define ABOUT_URL						"<a href='http://TalkVideo.net'>TalkVideo Website</a>"
 #define SHOW_DIALPAD_TEXT		tr("Show Dialpad")
 #define HIDE_DIALPAD_TEXT		tr("Hide Dialpad")
 #define NOTIFICATION_ENABLED		false
