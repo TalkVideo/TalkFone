@@ -4,7 +4,7 @@ Built With Slackware-Current 07-2025
 1) Does Not Work Without Pulse Audio. May work with OSS.
 Not Yet Working With ALSA Directly Without Pulse Audio.
 
-2) IAX Client:
+2) IAX Client: ./iaxclient-code
 requires portaudio
 pa_stable_v190700_20210406.tgz
 
@@ -12,21 +12,23 @@ requires speex
 /usr/lib64/libspeex.so.1.5.2
 
 requires gsm
-https://www.quut.com/gsm/gsm-1.0.22.tar.gz
-locally in ./iaxclient-code/lib/gsm/
+Obtained From: https://www.quut.com/gsm/gsm-1.0.22.tar.gz
+Chckout into this directory from: git@github.com:TalkVideo/libgsm-1.0.22.git
+And run `make` in that directory.
 
 requires vidcap -- may be disabled
 libvidcap-0.2.1
+/usr/local/lib/libvidcap.so.1.0.0
 
 Configured With:
 ./configure --prefix=$HOME/TalkFone --enable-local-gsm --enable-static --enable-clients=testcall
-(clients iaxphone iaxcomm stresstest, etc require additional deps).
+clients iaxphone iaxcomm stresstest, etc require additional deps.
+--enable-local-gsm Uses Headers And Libs in ./iaxclient-code/lib/gsm/
 
-
-3) Kiax:
+3) TalkFone: ./kiax-code
 requires wxWidgets-3.0.x
 
-Edit These Files According To System:
+Edit These Files For Header And Library Locations:
 kiax2core/gui.pro 
 kiax2core/kiax2core.pro 
 
@@ -34,5 +36,5 @@ Then run:
 qmake6
 from top-level of kiax-code directory
 
-Add Kiax user to audio and video groups
+Add TalkFone users to audio and video groups
 
