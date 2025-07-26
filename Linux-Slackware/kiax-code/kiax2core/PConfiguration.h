@@ -152,4 +152,5 @@
 #define ALLOW_ONLY_TEL			false
 #define HOME_PROFILE			true
 #define DEFAULT_DIALPAD_OPEN	true
-
+#define PULSE_NAME_PATTERN		"pulse"
+#define DEFAULT_NAME_PATTERN		"default"

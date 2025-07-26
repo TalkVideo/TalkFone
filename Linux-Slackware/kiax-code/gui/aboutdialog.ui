@@ -80,7 +80,7 @@
    <string>About</string>
   </property>
   <property name="styleSheet" >
-   <string notr="true" >background: url(./icons/dialer/fondo.png);</string>
+   <string notr="true" >background: url(./icons/about.png);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout" >
    <item row="0" column="0" colspan="2" >

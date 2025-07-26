@@ -139,9 +139,10 @@ void IAX2CallbackHandlerQt::event_state(int callNo, int state, char *remote, cha
 	if ( (active) || (state == 36) || (state == 22) || (state == 6) || (state == 4) )
 	{ // there is a call progress
 		//ougoing calls
-		if ((outgoing) && ringing)
+		// if ((outgoing) && ringing)
+		if ((outgoing) )
 		{
-			Logger::log(Logger::DEBUG, " ACTIVE_OUTGOING_RINGING : %s\n",
+			Logger::log(Logger::INFO, " ACTIVE_OUTGOING_RINGING : %s\n",
 					(const char *) remote);
 			std::vector<SignalingCallback*>::iterator sigIter;
 			for (sigIter = signalHandlers.begin(); sigIter
@@ -152,6 +153,8 @@ void IAX2CallbackHandlerQt::event_state(int callNo, int state, char *remote, cha
 				callback->ringing(callNo);
 			}
 		}
+		printf("foo\n");
+
 		// incoming calls
 		if ((!outgoing)&& ringing)
 		{

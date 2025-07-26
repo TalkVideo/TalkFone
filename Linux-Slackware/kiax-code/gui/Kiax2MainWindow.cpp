@@ -849,6 +849,8 @@ void Kiax2MainWindow::adjustDevices()
   device = devices;
   for(int i=0; i<devNumber; i++)
   {
+	Logger::log(Logger::INFO, "Device Name %s Device Index %d\n", device->name, i);
+
     std::string devName(device->name);
 	deviceMap[i] = devName;
     device++;
@@ -880,17 +882,17 @@ void Kiax2MainWindow::adjustDevices()
 	    QString devName(device->name);
 	    if(devCapabilities & IAXC_AD_INPUT) 
 		{	
-			if (containsUsb(devName))
+			if (containsDefault(devName))
 				inputIndex = i;
 		}
 	    if(devCapabilities & IAXC_AD_OUTPUT) 
 		{
-			if (containsUsb(devName))
+			if (containsPulse(devName))
 				outputIndex = i;
 		}
 	    if(devCapabilities & IAXC_AD_RING)
 		{
-			if (containsUsb(devName))
+			if (containsPulse(devName))
 				ringIndex = i;
 		}
 	    device++;
@@ -938,6 +940,35 @@ bool Kiax2MainWindow::containsUsb(QString name)
 	return false;
 }
 
+bool Kiax2MainWindow::containsPulse(QString name)
+{
+	QString pattern = QString::fromStdString(PULSE_NAME_PATTERN);
+	QRegExp rx(pattern);	
+	rx.setCaseSensitivity(Qt::CaseInsensitive);
+	if (!rx.isValid())
+		return false;
+	else
+	{
+		int index = rx.indexIn(name);
+		return (index>-1);
+	}
+	return false;
+}
+
+bool Kiax2MainWindow::containsDefault(QString name)
+{
+	QString pattern = QString::fromStdString(DEFAULT_NAME_PATTERN);
+	QRegExp rx(pattern);	
+	rx.setCaseSensitivity(Qt::CaseInsensitive);
+	if (!rx.isValid())
+		return false;
+	else
+	{
+		int index = rx.indexIn(name);
+		return (index>-1);
+	}
+	return false;
+}
 bool Kiax2MainWindow::paramShow()
 {
 	std::string paramStr = readParameter(std::string("ShowMainWindow"), "true");
@@ -2700,7 +2731,8 @@ void Kiax2MainWindow::incomingCall(int callNumber, std::string callerId)
 	callAppearance->setCallDirection(CALL_INCOMING);
 	callAppearance->initiateCall(CALL_DIRECTION_INCOMING);
 	
-	api->answer(callNumber);
+	// This Is A Hack For Auto-Answer
+	// api->answer(callNumber);
 
 #if !defined(TABBED_LAYOUT)
 	callAppearance->appearance->window()->show();

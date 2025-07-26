@@ -53,7 +53,7 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::Base, brush);
         palette.setBrush(QPalette::Disabled, QPalette::Window, brush);
         AboutDialog->setPalette(palette);
-        AboutDialog->setStyleSheet(QString::fromUtf8("background: url(./icons/dialer/fondo.png);"));
+        AboutDialog->setStyleSheet(QString::fromUtf8("background: url(./icons/about.png);"));
         gridLayout = new QGridLayout(AboutDialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         productLabel = new QLabel(AboutDialog);

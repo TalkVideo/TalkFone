@@ -189,6 +189,8 @@ public slots:
   void httpHangupAll(); 
   void httpCallWithAccount(QString number, Account* account);
   bool containsUsb(QString name);  
+  bool containsPulse(QString name);  
+  bool containsDefault(QString name);  
    void httpHangup();  
  void enableUse();
   void disableUse();
