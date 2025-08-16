@@ -1,0 +1,32 @@
+Built With macOs 15.6 On Late 2013 Mac Pro With OCLP
+
+1) IAX Client: ./iaxclient-code
+requires portaudio
+pa_stable_v190700_20210406.tgz
+
+requires speex, speexdsp
+/usr/lib64/libspeex.so.1.5.2
+
+requires gsm
+Obtained From: https://www.quut.com/gsm/gsm-1.0.22.tar.gz
+Checkout into this directory from: git@github.com:TalkVideo/libgsm-1.0.22.git
+And run `make` in that directory.
+
+requires vidcap -- may be disabled
+libvidcap-0.2.1
+/usr/local/lib/libvidcap.so.1.0.0
+
+Configure With:
+./configure --prefix=$HOME/TalkFone --enable-local-gsm --enable-static --enable-clients=testcall CFLAGS=-mmacosx-version-min=15
+
+Additional clients iaxphone iaxcomm stresstest, etc require additional deps.
+--enable-local-gsm Uses Headers in ./iaxclient-code/lib/gsm/
+
+Edit These Files For Header And Library Locations:
+kiax2core/gui.pro 
+kiax2core/kiax2core.pro 
+
+Then run:
+qmake6
+from top-level of kiax-code directory
+

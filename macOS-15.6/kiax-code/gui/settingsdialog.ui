@@ -1,0 +1,401 @@
+<ui version="4.0" >
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Settings</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3" >
+   <item row="0" column="0" colspan="3" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="general" >
+      <attribute name="title" >
+       <string>General</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2" >
+       <item row="0" column="0" >
+        <widget class="QGroupBox" name="groupBox_2" >
+         <property name="title" >
+          <string>Appearance</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6" >
+          <item row="0" column="0" >
+           <widget class="QCheckBox" name="dialWinOnTop" >
+            <property name="text" >
+             <string>Call windows stay on top</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QCheckBox" name="mainWinOnTop" >
+            <property name="text" >
+             <string>All windows stay on top</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QGroupBox" name="devicesBox" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="MinimumExpanding" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title" >
+          <string>Devices</string>
+         </property>
+         <layout class="QGridLayout" name="_2" >
+          <property name="topMargin" >
+           <number>3</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>3</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="inputDeviceIcon" >
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="pixmap" >
+             <pixmap>icons/outputdevice.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QLabel" name="label" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Preferred" hsizetype="MinimumExpanding" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text" >
+             <string>Input device</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QComboBox" name="inputDeviceComboBox" />
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="outputDeviceIcon" >
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="pixmap" >
+             <pixmap>icons/outputdevice.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" >
+           <widget class="QLabel" name="label_2" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Preferred" hsizetype="MinimumExpanding" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text" >
+             <string>Output device</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" >
+           <widget class="QComboBox" name="outputDeviceComboBox" />
+          </item>
+          <item row="2" column="0" >
+           <widget class="QLabel" name="ringDeviceIcon" >
+            <property name="text" >
+             <string/>
+            </property>
+            <property name="pixmap" >
+             <pixmap>icons/ringdevice.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" >
+           <widget class="QLabel" name="label_3" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Preferred" hsizetype="MinimumExpanding" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text" >
+             <string>Ring device</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2" >
+           <widget class="QComboBox" name="ringDeviceComboBox" />
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QGroupBox" name="networkGroupBox" >
+         <property name="title" >
+          <string>Network</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout" >
+          <property name="topMargin" >
+           <number>3</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>3</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QCheckBox" name="networkAutoCheckBox" >
+            <property name="text" >
+             <string>Auto</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QLabel" name="codecLabel" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <property name="text" >
+             <string>Voice quality</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QComboBox" name="codecComboBox" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <item>
+             <property name="text" >
+              <string>ULAW</string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>GSM</string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>SPEEX</string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>iLBC</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3" >
+           <widget class="QCheckBox" name="versionInfoCheckBox" >
+            <property name="text" >
+             <string>Request Version Info (anonymous)</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0" >
+        <widget class="QGroupBox" name="startupCheckBoxes" >
+         <property name="title" >
+          <string>Start up</string>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="leftMargin" >
+           <number>9</number>
+          </property>
+          <property name="topMargin" >
+           <number>3</number>
+          </property>
+          <property name="bottomMargin" >
+           <number>3</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QCheckBox" name="autoCheckBox" >
+            <property name="text" >
+             <string>Auto</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QCheckBox" name="onStartupCheckBox" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <property name="text" >
+             <string>Connect on start up</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QCheckBox" name="hideCheckBox" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <property name="text" >
+             <string>Hide window</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="advanced" >
+      <attribute name="title" >
+       <string>Advanced</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5" >
+       <item row="0" column="0" >
+        <widget class="QGroupBox" name="groupBox" >
+         <property name="title" >
+          <string>System</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4" >
+          <property name="bottomMargin" >
+           <number>12</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="startupLabel" >
+            <property name="text" >
+             <string>Startup</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QComboBox" name="startupComboBox" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <item>
+             <property name="text" >
+              <string>Run on OS start</string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>Do not run on OS start</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="routingLabel" >
+            <property name="text" >
+             <string>Routing</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" >
+           <widget class="QComboBox" name="routingComboBox" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <item>
+             <property name="text" >
+              <string>Softphone</string>
+             </property>
+            </item>
+            <item>
+             <property name="text" >
+              <string>Server</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <spacer name="verticalSpacer" >
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>20</width>
+           <height>179</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <spacer name="spacer" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>139</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QPushButton" name="saveButton" >
+     <property name="text" >
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" >
+    <widget class="QPushButton" name="cancelButton" >
+     <property name="text" >
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
