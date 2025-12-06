@@ -67,7 +67,7 @@ public:
     void setupUi(QDialog *CallDialog)
     {
         if (CallDialog->objectName().isEmpty())
-            CallDialog->setObjectName(QString::fromUtf8("CallDialog"));
+        CallDialog->setObjectName(QString::fromUtf8("CallDialog"));
         CallDialog->resize(281, 555);
         QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
