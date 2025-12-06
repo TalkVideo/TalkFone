@@ -4,13 +4,20 @@
 #include <unistd.h>
 #endif
 #include <QLocalSocket>
+#include <filesystem>
+#include <string>
 
 Kiax2Application::Kiax2Application(int &argc, char *argv[], const QString uniqueKey) : QApplication(argc, argv), _uniqueKey(uniqueKey)
 {
 	Logger::init(Logger::DEBUG);
 
 #ifdef MACXDEP
-	chdir("Kiax.app/Contents/MacOS");
+	Logger::log(Logger::INFO,"Application path: %s\n", argv[0]);
+	std::filesystem::path appPath = argv[0];
+	// chdir("Kiax.app/Contents/MacOS");
+	// chdir("/Users/ballcam/Source/TalkFone/macOS-15.6/kiax-code/gui/");
+	chdir(appPath.parent_path().c_str());
+	chdir("../Resources");
 #endif
 #if defined(WIN32DEP) || defined(LINUXDEP)
 	Logger::log(Logger::DEBUG,"Application dir path: %s\n", applicationDirPath().toStdString().data());

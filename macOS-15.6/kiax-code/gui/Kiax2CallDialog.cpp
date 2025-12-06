@@ -85,7 +85,7 @@ Kiax2CallDialog::Kiax2CallDialog(QWidget* parent, APIBinder* binder, Contact* co
 
 QString Kiax2CallDialog::decodeExtension(QString number, bool decodeHost, bool decodeExtension)
 {
-               QString telNumber = number;
+		QString telNumber = number;
 		QString destination = number;
 		QString host = number;
 		int hashPos = number.indexOf("##");
