@@ -3,7 +3,7 @@ CONFIG += qt
 CORELIBDIR = ../kiax2core
 INCLUDEPATH += . $$CORELIBDIR $$CORELIBDIR/includes $$CORELIBDIR/includes/json
 LIBSDIR += $$CORELIBDIR
-LIBS +=  -framework CoreAudio -framework Carbon -framework QtWidgets -framework QtCore5Compat $$CORELIBDIR/libkiax2core.a ../../iaxclient-code/lib/.libs/libiaxclient.a /usr/lib/sqlite3/libtclsqlite3.dylib /usr/local/lib/libspeex.dylib  /usr/local/lib/libvidcap.dylib   /usr/local/lib/libportaudio.dylib /usr/local/lib/libspeexdsp.dylib /usr/local/lib/libjson.dylib 
+LIBS +=  -framework CoreAudio -framework Carbon -framework QtWidgets -framework QtCore5Compat $$CORELIBDIR/libkiax2core.a ${HOME}/TalkFone/lib/libiaxclient.a /usr/lib/sqlite3/libtclsqlite3.dylib /usr/local/lib/libspeex.dylib  /usr/local/lib/libvidcap.dylib   /usr/local/lib/libportaudio.dylib /usr/local/lib/libspeexdsp.dylib /usr/local/lib/libjson.dylib 
 CFLAGS=-mmacosx-version-min=15.0
 DEFINES += MACXDEP
 
